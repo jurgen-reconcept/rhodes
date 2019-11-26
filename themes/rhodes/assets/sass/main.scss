@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+$col-brand: #3F5E6A;
+$col-hover: #723857;
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.container {
+    margin: 100px auto;
+    width: 80%;
+    max-width: 1200px;
+
+    .nav {
+        display: flex;
+        padding: 30px;
+
+        .nav-item {
+            flex: 1;
+            text-align: center;
+
+            .nav-link {
+                color: black;
+                font-size: 24px;
+                font-family: 'Covered By Your Grace';
+                text-decoration: none;
+                transition: border-bottom-color .3s;
+                border-bottom: 2px solid transparent;
+
+                &.active, &:hover {
+                    border-bottom: 2px solid $col-brand;
+                }
+            }
+        }
+    }
+
+    section {
+        margin-bottom: 50px;
+
+        .section-title {
+            text-align: center;
+            font-family: 'Covered By Your Grace';
+            color: black;
+            font-size: 36px;
+            padding: 30px;
+            padding-top: 0;
+        }
+    }
+}
+
+p {
+    margin-top: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.muted {
+    opacity: .4;
+}
+
+a {
+    color: $col-brand;
+    transition: color .4s;
+    text-decoration: none;
+
+    &:hover {
+        color: $col-hover;
+    }
+
+    &.icon {
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+// bandsintown
+.bit-top-track-button, .bit-nav-bar-container {
+    display: none !important;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-container {
+    background: url('/dave-herring.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 150px;
+
+    &.big {
+        height: 500px;
+    }
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    img.logo {
+        width: 160px;
+        opacity: 0;
+        animation: fade-in 5s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+    }
+}
+
+img.photo {
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float: right;
+
+    @media only screen and (max-width: 900px) {
+        margin-left: 0;
+        width: 100%;
+        float: none;
+    }
+}
+
+.clearfix::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+// fontawesome icons
+.inline-svg {
+    display: inline-block;
+    height: 1.15rem;
+    width: 1.15rem;
+    top: 0.15rem;
+    position: relative;
+}

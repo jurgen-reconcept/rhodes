@@ -1,0 +1,4 @@
+baseURL = "https://jonathanrhodes.nl/"
+languageCode = "en-us"
+title = "Jonathan Rhodes"
+theme = "rhodes"
