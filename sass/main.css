@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-weight: lighter; }
+
+.container {
+  margin: 100px auto;
+  width: 80%;
+  max-width: 1200px; }
+  .container .nav {
+    display: flex;
+    padding: 30px; }
+    .container .nav .nav-item {
+      flex: 1;
+      text-align: center; }
+      .container .nav .nav-item .nav-link {
+        color: black;
+        font-size: 24px;
+        font-family: 'Covered By Your Grace';
+        text-decoration: none;
+        transition: border-bottom-color .3s;
+        border-bottom: 2px solid transparent; }
+        .container .nav .nav-item .nav-link.active, .container .nav .nav-item .nav-link:hover {
+          border-bottom: 2px solid #3F5E6A; }
+  .container section {
+    margin-bottom: 50px; }
+    .container section .section-title {
+      text-align: center;
+      font-family: 'Covered By Your Grace';
+      color: black;
+      font-size: 36px;
+      padding: 30px;
+      padding-top: 0; }
+
+p {
+  margin-top: 0; }
+
+.center {
+  text-align: center; }
+
+.muted {
+  opacity: .4; }
+
+a {
+  color: #3F5E6A;
+  transition: color .4s;
+  text-decoration: none; }
+  a:hover {
+    color: #723857; }
+  a.icon {
+    font-size: 30px;
+    margin: 10px; }
+
+.bit-top-track-button, .bit-nav-bar-container {
+  display: none !important; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.image-container {
+  background: url("/dave-herring.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 150px;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .image-container.big {
+    height: 500px; }
+  .image-container img.logo {
+    width: 160px;
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-fill-mode: both;
+    animation-delay: 2s; }
+
+img.photo {
+  width: 50%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  float: right; }
+  @media only screen and (max-width: 900px) {
+    img.photo {
+      margin-left: 0;
+      width: 100%;
+      float: none; } }
+
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: ''; }
+
+.inline-svg {
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative; }
