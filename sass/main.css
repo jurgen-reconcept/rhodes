@@ -6,11 +6,22 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 15px;
   font-weight: lighter; }
+  body.dark {
+    background: black;
+    color: white; }
+    body.dark section .section-title, body.dark a {
+      color: white; }
+    body.dark .inline-svg {
+      width: 2rem;
+      height: 2rem; }
 
 .container {
   margin: 100px auto;
   width: 80%;
   max-width: 1200px; }
+  .container.container-live {
+    width: 100%;
+    margin: 0 auto; }
   .container .nav {
     display: flex;
     padding: 30px; }
@@ -81,6 +92,20 @@ a {
     animation: fade-in 5s;
     animation-fill-mode: both;
     animation-delay: 2s; }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.27198%; }
+
+.video-container iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 img.photo {
   width: 50%;
