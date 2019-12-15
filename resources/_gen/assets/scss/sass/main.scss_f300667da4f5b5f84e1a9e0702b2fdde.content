@@ -65,6 +65,9 @@ a {
   a.icon {
     font-size: 30px;
     margin: 10px; }
+  a.block {
+    display: block;
+    margin-bottom: 30px; }
 
 .bit-top-track-button, .bit-nav-bar-container {
   display: none !important; }
