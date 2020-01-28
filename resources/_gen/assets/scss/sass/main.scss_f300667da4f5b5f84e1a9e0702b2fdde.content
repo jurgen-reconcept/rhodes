@@ -132,3 +132,27 @@ img.photo {
   width: 1.15rem;
   top: 0.15rem;
   position: relative; }
+
+#bio .bio-dutch {
+  display: none; }
+
+#bio .bio-english {
+  display: block; }
+
+#bio .toggle-dutch {
+  display: block; }
+
+#bio .toggle-english {
+  display: none; }
+
+#bio.show-dutch .bio-dutch {
+  display: block; }
+
+#bio.show-dutch .bio-english {
+  display: none; }
+
+#bio.show-dutch .toggle-dutch {
+  display: none; }
+
+#bio.show-dutch .toggle-english {
+  display: block; }

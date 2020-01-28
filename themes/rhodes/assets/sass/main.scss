@@ -188,3 +188,34 @@ img.photo {
     top: 0.15rem;
     position: relative;
 }
+
+// bio
+#bio {
+    .bio-dutch {
+        display: none;
+    }
+    .bio-english {
+        display: block;
+    }
+    .toggle-dutch {
+        display: block;
+    }
+    .toggle-english {
+        display: none;
+    }
+}
+
+#bio.show-dutch {
+    .bio-dutch {
+        display: block;
+    }
+    .bio-english {
+        display: none;
+    }
+    .toggle-dutch {
+        display: none;
+    }
+    .toggle-english {
+        display: block;
+    }
+}
