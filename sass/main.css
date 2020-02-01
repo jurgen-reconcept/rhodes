@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+@font-face {
+  font-family: 'Jasper Daniels';
+  src: url("/JasperDaniels.woff2") format("woff2"), url("/JasperDaniels.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
 body {
   margin: 0;
   font-family: 'Merriweather', serif;
@@ -31,7 +36,7 @@ body {
       .container .nav .nav-item .nav-link {
         color: black;
         font-size: 24px;
-        font-family: 'Covered By Your Grace';
+        font-family: 'Jasper Daniels';
         text-decoration: none;
         transition: border-bottom-color .3s;
         border-bottom: 2px solid transparent; }
@@ -41,11 +46,21 @@ body {
     margin-bottom: 50px; }
     .container section .section-title {
       text-align: center;
-      font-family: 'Covered By Your Grace';
+      font-family: 'Jasper Daniels';
       color: black;
-      font-size: 36px;
+      font-size: 42px;
       padding: 30px;
       padding-top: 0; }
+    .container section .row {
+      margin-left: -30px;
+      margin-right: -30px;
+      display: flex;
+      flex-wrap: wrap-reverse; }
+      .container section .row .col {
+        flex: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-width: 400px; }
 
 p {
   margin-top: 0; }
@@ -74,12 +89,14 @@ a {
 
 @keyframes fade-in {
   from {
-    opacity: 0; }
+    opacity: 0;
+    transform: translate3d(0, 15px, 0); }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
 .image-container {
-  background: url("/dave-herring.jpg");
+  background: url("/dave-herring2.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -94,7 +111,7 @@ a {
     opacity: 0;
     animation: fade-in 5s;
     animation-fill-mode: both;
-    animation-delay: 2s; }
+    animation-delay: .3s; }
 
 .video-container {
   position: relative;
