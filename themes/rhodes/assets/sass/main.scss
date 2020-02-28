@@ -91,6 +91,10 @@ body {
                 padding-left: $m;
                 padding-right: $m;
                 min-width: 400px;
+
+                &.col-bg-black {
+                    background: black;
+                }
             }
         }
     }
@@ -185,6 +189,9 @@ a {
 }
 
 img.photo {
+    width: 100%;
+}
+img.photo-bio {
     width: 50%;
     margin-left: 30px;
     margin-bottom: 30px;
