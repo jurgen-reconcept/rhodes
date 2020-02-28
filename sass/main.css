@@ -105,7 +105,10 @@ a {
   height: 150px;
   display: flex;
   align-content: center;
-  justify-content: center; }
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white; }
   .image-container.big {
     height: 500px; }
   .image-container img.logo {
@@ -114,6 +117,16 @@ a {
     animation: fade-in 5s;
     animation-fill-mode: both;
     animation-delay: .3s; }
+  .image-container h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    animation: fade-in 5s;
+    animation-fill-mode: both;
+    animation-delay: .8s; }
+
+.image-container-promo {
+  background-image: url("/website-bg.png");
+  background-attachment: initial; }
 
 .video-container {
   position: relative;
