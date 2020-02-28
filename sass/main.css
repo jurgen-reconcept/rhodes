@@ -61,6 +61,8 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         min-width: 400px; }
+        .container section .row .col.col-bg-black {
+          background: black; }
 
 p {
   margin-top: 0; }
@@ -128,12 +130,15 @@ a {
   height: 100%; }
 
 img.photo {
+  width: 100%; }
+
+img.photo-bio {
   width: 50%;
   margin-left: 30px;
   margin-bottom: 30px;
   float: right; }
   @media only screen and (max-width: 900px) {
-    img.photo {
+    img.photo-bio {
       margin-left: 0;
       width: 100%;
       float: none; } }
