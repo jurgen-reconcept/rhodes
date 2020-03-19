@@ -110,7 +110,7 @@ a {
   flex-direction: column;
   color: white; }
   .image-container.big {
-    height: 500px; }
+    height: 400px; }
   .image-container img.logo {
     width: 160px;
     opacity: 0;
@@ -191,3 +191,17 @@ img.photo-bio {
 
 #bio.show-dutch .toggle-english {
   display: block; }
+
+.container-blind-promo {
+  background: black;
+  margin: 0;
+  padding: 50px;
+  width: 100%;
+  max-width: none;
+  min-height: 800px; }
+  .container-blind-promo h1 {
+    color: #881E0A;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .container-blind-promo a.icon {
+    color: white; }
