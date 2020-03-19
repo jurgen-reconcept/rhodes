@@ -156,7 +156,7 @@ a {
     height: 150px;
 
     &.big {
-        height: 500px;
+        height: 400px;
     }
 
     display: flex;
@@ -263,5 +263,24 @@ img.photo-bio {
     }
     .toggle-english {
         display: block;
+    }
+}
+
+// blind promo
+$col-blind: #881E0A;
+.container-blind-promo {
+    background: black;
+    margin: 0;
+    padding: 50px;
+    width: 100%;
+    max-width: none;
+    min-height: 800px;
+    h1 {
+        color: $col-blind;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    a.icon {
+        color: white;
     }
 }
