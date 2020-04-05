@@ -11,6 +11,10 @@
 $col-brand: #3F5E6A;
 $col-hover: #723857;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Merriweather', serif;
