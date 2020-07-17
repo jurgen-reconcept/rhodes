@@ -113,9 +113,9 @@ a {
   flex-direction: column;
   color: white; }
   .image-container.big {
-    height: 400px; }
+    height: 600px; }
   .image-container img.logo {
-    width: 160px;
+    width: 260px;
     opacity: 0;
     animation: fade-in 5s;
     animation-fill-mode: both;
@@ -128,7 +128,7 @@ a {
     animation-delay: .8s; }
 
 .image-container-promo {
-  background-image: url("/website-bg.png");
+  background-image: url("/fotos/band3.jpg");
   background-attachment: initial; }
 
 .video-container {
