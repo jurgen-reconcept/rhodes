@@ -160,7 +160,7 @@ a {
     height: 150px;
 
     &.big {
-        height: 400px;
+        height: 600px;
     }
 
     display: flex;
@@ -171,7 +171,7 @@ a {
     color: white;
 
     img.logo {
-        width: 160px;
+        width: 260px;
         opacity: 0;
         animation: fade-in 5s;
         animation-fill-mode: both;
@@ -188,7 +188,7 @@ a {
 }
 
 .image-container-promo {
-    background-image: url('/website-bg.png');
+    background-image: url('/fotos/band3.jpg');
     background-attachment: initial;
 }
 
