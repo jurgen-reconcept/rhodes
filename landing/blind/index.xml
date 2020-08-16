@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jonathan Rhodes - Blind on Jonathan Rhodes</title>
+    <link>https://jonathanrhodes.nl/landing/blind/</link>
+    <description>Recent content in Jonathan Rhodes - Blind on Jonathan Rhodes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jonathanrhodes.nl/landing/blind/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/blind/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/blind/apple/</guid>
+      <description> window.location.href = `https://music.apple.com/us/album/blind-single/1501162685` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/blind/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/blind/spotify/</guid>
+      <description> window.location.href = `https://open.spotify.com/track/3uW9hLajuDrNZ7LALZ3mG3?si=YyvqXl-zTQaD7zq7nrG5zA` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/blind/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/blind/youtube/</guid>
+      <description> window.location.href = `https://youtu.be/h3bhfB6BQGg` </description>
+    </item>
+    
+  </channel>
+</rss>

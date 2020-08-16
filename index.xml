@@ -21,20 +21,56 @@
     
     <item>
       <title>Jonathan Rhodes - Blind</title>
-      <link>https://jonathanrhodes.nl/landing/blind/</link>
+      <link>https://jonathanrhodes.nl/landing/blind/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jonathanrhodes.nl/landing/blind/</guid>
-      <description>     -- Listen on Spotify    -- Listen on Apple Music    -- Watch on YouTube    </description>
+      <guid>https://jonathanrhodes.nl/landing/blind/apple/</guid>
+      <description> window.location.href = `https://music.apple.com/us/album/blind-single/1501162685` </description>
     </item>
     
     <item>
-      <title>Jonathan Rhodes - Time &amp; Money</title>
-      <link>https://jonathanrhodes.nl/landing/money/</link>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/blind/spotify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jonathanrhodes.nl/landing/money/</guid>
-      <description>     -- Listen on Spotify    -- Listen on Apple Music    -- Watch on YouTube    </description>
+      <guid>https://jonathanrhodes.nl/landing/blind/spotify/</guid>
+      <description> window.location.href = `https://open.spotify.com/track/3uW9hLajuDrNZ7LALZ3mG3?si=YyvqXl-zTQaD7zq7nrG5zA` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/blind/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/blind/youtube/</guid>
+      <description> window.location.href = `https://youtu.be/h3bhfB6BQGg` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/money/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/money/apple/</guid>
+      <description> window.location.href = `` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/money/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/money/spotify/</guid>
+      <description> window.location.href = `` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Blind</title>
+      <link>https://jonathanrhodes.nl/landing/money/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/money/youtube/</guid>
+      <description> window.location.href = `https://youtu.be/-WLH_61py9w` </description>
     </item>
     
     <item>
