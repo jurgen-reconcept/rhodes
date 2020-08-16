@@ -1,24 +1,59 @@
 <head>
-    <title>{{.Title}}</title>
-    {{ $sass := resources.Get "sass/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <title>{{.Title}}</title>
+  {{ $sass := resources.Get "sass/main.scss" }} {{ $style := $sass | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="description" content="{{.Description}}">
+  <meta name="description" content="{{.Description}}" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-    <meta content="{{ .Title }}" property="og:site_name">
-    <meta content="{{ .Title }}" property="og:title">
-    <meta content="website" property="og:type">
-    <meta content="{{ .Site.BaseURL }}" property="og:url">
-    <meta content="{{ .Description }}" property="og:description">
-    <meta content="{{ .Site.BaseURL }}{{ .Param "featured_image" }}" property="og:image">
+  <meta content="{{ .Title }}" property="og:site_name" />
+  <meta content="{{ .Title }}" property="og:title" />
+  <meta content="website" property="og:type" />
+  <meta content="{{ .Site.BaseURL }}" property="og:url" />
+  <meta content="{{ .Description }}" property="og:description" />
+  <meta content="{{ .Site.BaseURL }}{{ .Param "featured_image" }}" property="og:image"/>
 
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "714160709315339");
+    fbq("track", "PageView");
+  </script>
+  <noscript
+    ><img
+      height="1"
+      width="1"
+      style="display: none;"
+      src="https://www.facebook.com/tr?id=714160709315339&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>

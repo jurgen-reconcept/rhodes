@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 @font-face {
-    font-family: 'Jasper Daniels';
-    src: url('/JasperDaniels.woff2') format('woff2'),
-        url('/JasperDaniels.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Jasper Daniels";
+  src: url("/JasperDaniels.woff2") format("woff2"),
+    url("/JasperDaniels.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
 }
 
-$col-brand: #3F5E6A;
+$col-brand: #3f5e6a;
 $col-hover: #723857;
 
 * {
@@ -16,275 +16,287 @@ $col-hover: #723857;
 }
 
 body {
-    margin: 0;
-    font-family: 'Merriweather', serif;
-    font-size: 15px;
-    font-weight: lighter;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  font-weight: lighter;
 
-    &.dark {
-        background: black;
-        color: white;
-        
-        section .section-title, a {
-            color: white;
-        }
+  &.dark {
+    background: black;
+    color: white;
 
-        // bigger icons
-        .inline-svg {
-            width: 2rem;
-            height: 2rem;
-        }
+    section .section-title,
+    a {
+      color: white;
     }
+
+    // bigger icons
+    // .inline-svg {
+    //   width: 2rem;
+    //   height: 2rem;
+    // }
+  }
 }
 
 .container {
-    margin: 100px auto;
-    width: 80%;
-    max-width: 1200px;
+  margin: 100px auto;
+  width: 80%;
+  max-width: 1200px;
 
-    &.container-live {
-        // background: black;
-        width: 100%;
-        margin: 0 auto;
+  &.container-live {
+    // background: black;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: flex;
+    padding: 30px;
+
+    .nav-item {
+      flex: 1;
+      text-align: center;
+
+      .nav-link {
+        color: black;
+        font-size: 24px;
+        font-family: "Jasper Daniels";
+        text-decoration: none;
+        transition: border-bottom-color 0.3s;
+        border-bottom: 2px solid transparent;
+
+        &.active,
+        &:hover {
+          border-bottom: 2px solid $col-brand;
+        }
+      }
+    }
+  }
+
+  section {
+    margin-bottom: 50px;
+
+    .section-title {
+      text-align: center;
+      font-family: "Jasper Daniels";
+      color: black;
+      font-size: 42px;
+      padding: 30px;
+      padding-top: 0;
     }
 
-    .nav {
-        display: flex;
-        padding: 30px;
+    $m: 30px;
+    .row {
+      margin-left: -$m;
+      margin-right: -$m;
+      display: flex;
+      flex-wrap: wrap-reverse;
 
-        .nav-item {
-            flex: 1;
-            text-align: center;
+      .col {
+        flex: 1;
+        padding-left: $m;
+        padding-right: $m;
+        min-width: 400px;
 
-            .nav-link {
-                color: black;
-                font-size: 24px;
-                font-family: 'Jasper Daniels';
-                text-decoration: none;
-                transition: border-bottom-color .3s;
-                border-bottom: 2px solid transparent;
-
-                &.active, &:hover {
-                    border-bottom: 2px solid $col-brand;
-                }
-            }
+        &.col-bg-black {
+          background: black;
         }
+      }
     }
-
-    section {
-        margin-bottom: 50px;
-
-        .section-title {
-            text-align: center;
-            font-family: 'Jasper Daniels';
-            color: black;
-            font-size: 42px;
-            padding: 30px;
-            padding-top: 0;
-        }
-
-        $m: 30px;
-        .row {
-            margin-left: -$m;
-            margin-right: -$m;
-            display: flex;
-            flex-wrap: wrap-reverse;
-
-            .col {
-                flex: 1;
-                padding-left: $m;
-                padding-right: $m;
-                min-width: 400px;
-
-                &.col-bg-black {
-                    background: black;
-                }
-            }
-        }
-    }
+  }
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .muted {
-    opacity: .4;
+  opacity: 0.4;
 }
 
 a {
-    color: $col-brand;
-    transition: color .4s;
-    text-decoration: none;
+  color: $col-brand;
+  transition: color 0.4s;
+  text-decoration: none;
 
-    &:hover {
-        color: $col-hover;
-    }
+  &:hover {
+    color: $col-hover;
+  }
 
-    &.icon {
-        font-size: 30px;
-        margin: 10px;
+  &.icon {
+    font-size: 20px;
+    margin: 10px;
+    .inline-svg {
+      margin-right: 8px;
     }
+  }
 
-    &.block {
-        display: block;
-        margin-bottom: 30px;
-    }
+  &.block {
+    display: block;
+    border: 1px solid white;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
 }
 
 // bandsintown
-.bit-top-track-button, .bit-nav-bar-container {
-    display: none !important;
+.bit-top-track-button,
+.bit-nav-bar-container {
+  display: none !important;
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translate3d(0,15px,0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0,0,0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .image-container {
-    background: url('/dave-herring2.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 150px;
+  background: url("/dave-herring2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 150px;
 
-    &.big {
-        height: 600px;
-    }
+  &.big {
+    height: 600px;
+  }
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 
-    img.logo {
-        width: 260px;
-        opacity: 0;
-        animation: fade-in 5s;
-        animation-fill-mode: both;
-        animation-delay: .3s;
-    }
+  img.logo {
+    width: 260px;
+    opacity: 0;
+    animation: fade-in 5s;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+  }
 
-    h2 {
-        font-weight: normal;
-        margin-top: 40px;
-        animation: fade-in 5s;
-        animation-fill-mode: both;
-        animation-delay: .8s;
-    }
+  h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    animation: fade-in 5s;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
+  }
 }
 
 .image-container-promo {
-    background-image: url('/fotos/band3.jpg');
-    background-attachment: initial;
+  background-image: url("/fotos/band3.jpg");
+  background-attachment: initial;
 }
 
-.video-container{
-    position:relative;
-    width:100%;
-    height:0;
-    padding-bottom:56.27198%;
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.27198%;
 }
 
-.video-container iframe{
-    border: none;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+.video-container iframe {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 img.photo {
-    width: 100%;
+  width: 100%;
 }
 img.photo-bio {
-    width: 50%;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    float: right;
+  width: 50%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  float: right;
 
-    @media only screen and (max-width: 900px) {
-        margin-left: 0;
-        width: 100%;
-        float: none;
-    }
+  @media only screen and (max-width: 900px) {
+    margin-left: 0;
+    width: 100%;
+    float: none;
+  }
+}
+img.cover-art {
+  width: 100%;
+  max-width: 400px;
 }
 
 .clearfix::after {
-    clear: both;
-    display: block;
-    content: '';
+  clear: both;
+  display: block;
+  content: "";
 }
 
 // fontawesome icons
 .inline-svg {
-    display: inline-block;
-    height: 1.15rem;
-    width: 1.15rem;
-    top: 0.15rem;
-    position: relative;
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative;
 }
 
 // bio
 #bio {
-    .bio-dutch {
-        display: none;
-    }
-    .bio-english {
-        display: block;
-    }
-    .toggle-dutch {
-        display: block;
-    }
-    .toggle-english {
-        display: none;
-    }
+  .bio-dutch {
+    display: none;
+  }
+  .bio-english {
+    display: block;
+  }
+  .toggle-dutch {
+    display: block;
+  }
+  .toggle-english {
+    display: none;
+  }
 }
 
 #bio.show-dutch {
-    .bio-dutch {
-        display: block;
-    }
-    .bio-english {
-        display: none;
-    }
-    .toggle-dutch {
-        display: none;
-    }
-    .toggle-english {
-        display: block;
-    }
+  .bio-dutch {
+    display: block;
+  }
+  .bio-english {
+    display: none;
+  }
+  .toggle-dutch {
+    display: none;
+  }
+  .toggle-english {
+    display: block;
+  }
 }
 
 // blind promo
-$col-blind: #881E0A;
+$col-blind: #881e0a;
 .container-blind-promo {
-    background: black;
-    margin: 0;
-    padding: 50px;
-    width: 100%;
-    max-width: none;
-    min-height: 800px;
-    h1 {
-        color: $col-blind;
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-    a.icon {
-        color: white;
-    }
+  background: black;
+  margin: 0;
+  padding: 50px;
+  width: 100%;
+  max-width: none;
+  min-height: 800px;
+  h1 {
+    color: $col-blind;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  a.icon {
+    color: white;
+  }
 }
