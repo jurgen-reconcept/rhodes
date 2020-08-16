@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 @font-face {
-  font-family: 'Jasper Daniels';
+  font-family: "Jasper Daniels";
   src: url("/JasperDaniels.woff2") format("woff2"), url("/JasperDaniels.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
@@ -11,17 +11,15 @@
 
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 15px;
   font-weight: lighter; }
   body.dark {
     background: black;
     color: white; }
-    body.dark section .section-title, body.dark a {
+    body.dark section .section-title,
+    body.dark a {
       color: white; }
-    body.dark .inline-svg {
-      width: 2rem;
-      height: 2rem; }
 
 .container {
   margin: 100px auto;
@@ -39,17 +37,17 @@ body {
       .container .nav .nav-item .nav-link {
         color: black;
         font-size: 24px;
-        font-family: 'Jasper Daniels';
+        font-family: "Jasper Daniels";
         text-decoration: none;
-        transition: border-bottom-color .3s;
+        transition: border-bottom-color 0.3s;
         border-bottom: 2px solid transparent; }
         .container .nav .nav-item .nav-link.active, .container .nav .nav-item .nav-link:hover {
-          border-bottom: 2px solid #3F5E6A; }
+          border-bottom: 2px solid #3f5e6a; }
   .container section {
     margin-bottom: 50px; }
     .container section .section-title {
       text-align: center;
-      font-family: 'Jasper Daniels';
+      font-family: "Jasper Daniels";
       color: black;
       font-size: 42px;
       padding: 30px;
@@ -74,22 +72,27 @@ p {
   text-align: center; }
 
 .muted {
-  opacity: .4; }
+  opacity: 0.4; }
 
 a {
-  color: #3F5E6A;
-  transition: color .4s;
+  color: #3f5e6a;
+  transition: color 0.4s;
   text-decoration: none; }
   a:hover {
     color: #723857; }
   a.icon {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px; }
+    a.icon .inline-svg {
+      margin-right: 8px; }
   a.block {
     display: block;
-    margin-bottom: 30px; }
+    border: 1px solid white;
+    margin-bottom: 30px;
+    padding: 10px; }
 
-.bit-top-track-button, .bit-nav-bar-container {
+.bit-top-track-button,
+.bit-nav-bar-container {
   display: none !important; }
 
 @keyframes fade-in {
@@ -119,13 +122,13 @@ a {
     opacity: 0;
     animation: fade-in 5s;
     animation-fill-mode: both;
-    animation-delay: .3s; }
+    animation-delay: 0.3s; }
   .image-container h2 {
     font-weight: normal;
     margin-top: 40px;
     animation: fade-in 5s;
     animation-fill-mode: both;
-    animation-delay: .8s; }
+    animation-delay: 0.8s; }
 
 .image-container-promo {
   background-image: url("/fotos/band3.jpg");
@@ -159,10 +162,14 @@ img.photo-bio {
       width: 100%;
       float: none; } }
 
+img.cover-art {
+  width: 100%;
+  max-width: 400px; }
+
 .clearfix::after {
   clear: both;
   display: block;
-  content: ''; }
+  content: ""; }
 
 .inline-svg {
   display: inline-block;
@@ -203,7 +210,7 @@ img.photo-bio {
   max-width: none;
   min-height: 800px; }
   .container-blind-promo h1 {
-    color: #881E0A;
+    color: #881e0a;
     font-size: 30px;
     margin-bottom: 30px; }
   .container-blind-promo a.icon {
