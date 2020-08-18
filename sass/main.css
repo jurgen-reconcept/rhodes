@@ -17,9 +17,11 @@ body {
   body.dark {
     background: black;
     color: white; }
-    body.dark section .section-title,
-    body.dark a {
+    body.dark section .section-title {
       color: white; }
+    body.dark a {
+      color: white;
+      text-decoration: underline; }
 
 .container {
   margin: 100px auto;
