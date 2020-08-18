@@ -25,9 +25,13 @@ body {
     background: black;
     color: white;
 
-    section .section-title,
+    section .section-title
+    {
+      color: white;
+    }
     a {
       color: white;
+      text-decoration: underline;
     }
 
     // bigger icons
