@@ -64,6 +64,8 @@ body {
         min-width: 400px; }
         .container section .row .col.col-bg-black {
           background: black; }
+        .container section .row .col.col-bg-white {
+          background: white; }
 
 p {
   margin-top: 0; }
