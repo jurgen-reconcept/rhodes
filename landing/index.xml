@@ -10,5 +10,50 @@
 	<atom:link href="https://jonathanrhodes.nl/landing/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/apple/</guid>
+      <description> window.location.href = `https://music.apple.com/nl/artist/jonathan-rhodes/1501153325` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/facebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/facebook/</guid>
+      <description> window.location.href = `https://www.facebook.com/JurgenMusic` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/instagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/instagram/</guid>
+      <description> window.location.href = `https://www.instagram.com/jonathan.rhodes.music` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/spotify/</guid>
+      <description> window.location.href = `https://open.spotify.com/artist/7iKI0f5q3WmoeNUY5xOnU8?si=GiDpUVxGQ52n8chM6DNy5g` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/youtube/</guid>
+      <description> window.location.href = `https://www.youtube.com/channel/UCyRqIW6CRmSW3FElPZRR5fw` </description>
+    </item>
+    
   </channel>
 </rss>

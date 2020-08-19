@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/epk/general/</guid>
-      <description>Contact &amp;amp; Social Media   Email: me@jonathanrhodes.nl  Instagram: https://www.instagram.com/jonathan.rhodes.music/  Facebook: https://www.facebook.com/JurgenMusic  YouTube: https://www.youtube.com/channel/UCyRqIW6CRmSW3FElPZRR5fw  SoundCloud: https://soundcloud.com/jonathanrhodesmusic       Bio    English   Jonathan Rhodes (NL) writes and performs songs with little pretence. Drawn from Dutch clay, he’s a city boy with a secret dream of a simpler life. Pulling inspiration from the rich American music tradition, his sound leans on roots and blues with a hint of gospel.</description>
+      <description>Contact &amp;amp; Social Media   Email: me@jonathanrhodes.nl  Spotify: https://jonathanrhodes.nl/landing/spotify  YouTube: https://jonathanrhodes.nl/landing/youtube  Instagram: https://jonathanrhodes.nl/landing/instagram  Facebook: https://jonathanrhodes.nl/landing/facebook       Bio    English   Jonathan Rhodes (NL) writes and performs songs with little pretence. Drawn from Dutch clay, he’s a city boy with a secret dream of a simpler life. Pulling inspiration from the rich American music tradition, his sound leans on roots and blues with a hint of gospel.</description>
     </item>
     
     <item>
@@ -80,6 +80,51 @@
       
       <guid>https://jonathanrhodes.nl/landing/money/youtube/</guid>
       <description> window.location.href = `https://youtu.be/-WLH_61py9w` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/apple/</guid>
+      <description> window.location.href = `https://music.apple.com/nl/artist/jonathan-rhodes/1501153325` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/facebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/facebook/</guid>
+      <description> window.location.href = `https://www.facebook.com/JurgenMusic` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/instagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/instagram/</guid>
+      <description> window.location.href = `https://www.instagram.com/jonathan.rhodes.music` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/spotify/</guid>
+      <description> window.location.href = `https://open.spotify.com/artist/7iKI0f5q3WmoeNUY5xOnU8?si=GiDpUVxGQ52n8chM6DNy5g` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Band</title>
+      <link>https://jonathanrhodes.nl/landing/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/youtube/</guid>
+      <description> window.location.href = `https://www.youtube.com/channel/UCyRqIW6CRmSW3FElPZRR5fw` </description>
     </item>
     
     <item>
