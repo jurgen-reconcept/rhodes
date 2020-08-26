@@ -14,14 +14,14 @@ body {
   font-family: "Merriweather", serif;
   font-size: 15px;
   font-weight: lighter;
-  background: #F7F7F2; }
+  background: #f7f7f2; }
   body.dark {
-    background: #262A10;
+    background: #262a10;
     color: white; }
     body.dark section .section-title {
       color: white; }
     body.dark a {
-      color: #F7F7F2;
+      color: #f7f7f2;
       text-decoration: underline; }
 
 .container {
@@ -38,20 +38,20 @@ body {
       flex: 1;
       text-align: center; }
       .container .nav .nav-item .nav-link {
-        color: #262A10;
+        color: #262a10;
         font-size: 24px;
         font-family: "Jasper Daniels";
         text-decoration: none;
         transition: border-bottom-color 0.3s;
         border-bottom: 2px solid transparent; }
         .container .nav .nav-item .nav-link.active, .container .nav .nav-item .nav-link:hover {
-          border-bottom: 2px solid #568EA3; }
+          border-bottom: 2px solid #568ea3; }
   .container section {
     margin-bottom: 50px; }
     .container section .section-title {
       text-align: center;
       font-family: "Jasper Daniels";
-      color: #262A10;
+      color: #262a10;
       font-size: 42px;
       padding: 30px;
       padding-top: 0; }
@@ -80,11 +80,11 @@ p {
   opacity: 0.4; }
 
 a {
-  color: #568EA3;
+  color: #568ea3;
   transition: color 0.4s;
   text-decoration: none; }
   a:hover {
-    color: #68C3D4; }
+    color: #68c3d4; }
   a.icon {
     font-size: 20px;
     margin: 10px; }
@@ -95,6 +95,34 @@ a {
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 10px; }
+
+.listen-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .listen-buttons a.listen-button {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; }
+    .listen-buttons a.listen-button .logo {
+      flex-grow: 1;
+      text-align: left; }
+      .listen-buttons a.listen-button .logo img {
+        max-height: 50px;
+        max-width: 100px; }
+    .listen-buttons a.listen-button .button {
+      flex-grow: 0;
+      width: 100px;
+      border-radius: 2px;
+      border: 1px solid #568ea3;
+      padding: 5px;
+      margin-left: 20px;
+      transition: background-color 0.3s; }
+    .listen-buttons a.listen-button:hover .button {
+      background-color: #568ea3;
+      color: white; }
 
 .bit-top-track-button,
 .bit-nav-bar-container {
@@ -143,7 +171,7 @@ a {
   height: 30px;
   margin-left: -30px;
   margin-right: -30px;
-  background: #65532F; }
+  background: #65532f; }
 
 .video-container {
   position: relative;
@@ -175,7 +203,10 @@ img.photo-bio {
 
 img.cover-art {
   width: 100%;
-  max-width: 400px; }
+  max-width: 250px;
+  -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41); }
 
 .clearfix::after {
   clear: both;
@@ -214,7 +245,7 @@ img.cover-art {
   display: block; }
 
 .container-blind-promo {
-  background: #262A10;
+  background: #262a10;
   margin: 0;
   padding: 50px;
   width: 100%;
