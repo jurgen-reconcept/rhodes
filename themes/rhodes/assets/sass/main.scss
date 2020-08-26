@@ -8,12 +8,11 @@
   font-style: normal;
 }
 
-
-$col-blue: #568EA3;
-$col-blue-2: #68C3D4;
-$col-drab: #65532F;
-$col-pine: #262A10;
-$col-white: #F7F7F2;
+$col-blue: #568ea3;
+$col-blue-2: #68c3d4;
+$col-drab: #65532f;
+$col-pine: #262a10;
+$col-white: #f7f7f2;
 
 $col-bg: $col-white;
 $col-accent: $col-drab;
@@ -36,8 +35,7 @@ body {
     background: $col-dark;
     color: white;
 
-    section .section-title
-    {
+    section .section-title {
       color: white;
     }
     a {
@@ -160,6 +158,43 @@ a {
   }
 }
 
+.listen-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a.listen-button {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .logo {
+      flex-grow: 1;
+      text-align: left;
+      img {
+        max-height: 50px;
+        max-width: 100px;
+      }
+    }
+    .button {
+      flex-grow: 0;
+      width: 100px;
+      border-radius: 2px;
+      border: 1px solid $col-blue;
+      padding: 5px;
+      margin-left: 20px;
+      transition: background-color 0.3s;
+    }
+
+    &:hover {
+      .button {
+        background-color: $col-blue;
+        color: white;
+      }
+    }
+  }
+}
+
 // bandsintown
 .bit-top-track-button,
 .bit-nav-bar-container {
@@ -258,7 +293,10 @@ img.photo-bio {
 }
 img.cover-art {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
+  -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
 }
 
 .clearfix::after {
