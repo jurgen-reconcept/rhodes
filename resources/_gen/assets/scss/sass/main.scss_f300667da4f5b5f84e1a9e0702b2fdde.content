@@ -69,6 +69,15 @@ body {
           background: black; }
         .container section .row .col.col-bg-white {
           background: white; }
+    .container section.padded {
+      padding: 30px; }
+    .container section.accent {
+      background-color: #568ea3;
+      color: white; }
+      .container section.accent a {
+        color: rgba(255, 255, 255, 0.7); }
+        .container section.accent a:hover {
+          color: white; }
 
 p {
   margin-top: 0; }
