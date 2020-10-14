@@ -49,6 +49,19 @@ body {
     //   height: 2rem;
     // }
   }
+
+  &.black {
+    background: black;
+    color: white;
+
+    section .section-title {
+      color: white;
+    }
+    a {
+      color: $col-bg;
+      text-decoration: underline;
+    }
+  }
 }
 
 .container {
@@ -160,6 +173,7 @@ a {
   &.icon {
     font-size: 20px;
     margin: 10px;
+    text-decoration: none !important;
     .inline-svg {
       margin-right: 8px;
     }

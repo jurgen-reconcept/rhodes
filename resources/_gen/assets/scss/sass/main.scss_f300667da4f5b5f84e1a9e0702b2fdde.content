@@ -23,6 +23,14 @@ body {
     body.dark a {
       color: #f7f7f2;
       text-decoration: underline; }
+  body.black {
+    background: black;
+    color: white; }
+    body.black section .section-title {
+      color: white; }
+    body.black a {
+      color: #f7f7f2;
+      text-decoration: underline; }
 
 .container {
   margin: 100px auto;
@@ -96,7 +104,8 @@ a {
     color: #68c3d4; }
   a.icon {
     font-size: 20px;
-    margin: 10px; }
+    margin: 10px;
+    text-decoration: none !important; }
     a.icon .inline-svg {
       margin-right: 8px; }
   a.block {
