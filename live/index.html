@@ -19,15 +19,24 @@
   <meta content="website" property="og:type" />
   <meta content="https://jonathanrhodes.nl/" property="og:url" />
   <meta content="Jonathan Rhodes writes and performs songs with little pretence" property="og:description" />
-  <meta content="https://jonathanrhodes.nl/fotos/solo6.jpg" property="og:image"/>
+  <meta content="https://jonathanrhodes.nl/fotos/solo6.jpg"
+  property="og:image"/>
 
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175651455-1"></script>
+  
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-175651455-1"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-175651455-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-175651455-1");
   </script>
 
   
@@ -62,32 +71,46 @@
     ><img
       height="1"
       width="1"
-      style="display: none;"
+      style="display: none"
       src="https://www.facebook.com/tr?id=714160709315339&ev=PageView&noscript=1"
   /></noscript>
   
 </head>
 <body class="black"><div id="content">
     
-<div class="container container-live">
-  <div class="video-container">
-    <!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/D_9uSH5_Yo8?controls=1"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      webkitallowfullscreen
-      mozallowfullscreen
-      allowfullscreen
-    ></iframe>
+<!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+<div class="live">
+  
+  <div id="overlay-start" class="overlay visible">
+    <p>
+      Je bent bij een show van Jonathan Rhodes. Leuk man!
+    </p>
+    <p>
+      Bij het nummer <i>Time & Money</i> hoort een live videoclip op je telefoon.
+      <!-- Hij begint vanzelf. -->
+      Klik op de knop zodra we beginnen te spelen.
+    </p>
+    <a href="#" onclick="startVideo()">
+      Start!
+    </a>
   </div>
 
-  <section class="center">
-    <!-- <div class="section-title">
-      Thanks for coming
-    </div> -->
-    <!-- <p>Tap to follow</p> -->
+  <!-- warning for portrait phones -->
+  <div id="overlay-orientation" class="overlay">
+    <p>
+      Draai je scherm een kwartslag. Dat staat een stuk beter.
+    </p>
+    <div class="phone-image">
+      <div class="inner"></div>
+    </div>
+  </div>
+
+  <div id="player"></div>
+
+  <div id="overlay-end" class="overlay">
+    <p>
+      Vond je dit te gek? Volg ons om op de hoogte te blijven!
+    </p>
 
     <p>
       <a
@@ -115,9 +138,145 @@
 </span>
       </a>
     </p>
-  </section>
+  </div>
+
 </div>
 
+
+<!-- 
+
+  <section class="center">
+
+    <p>
+      <a
+        class="icon"
+        href="https://www.instagram.com/jonathan.rhodes.music/"
+        target="_blank"
+      >
+        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+</span>
+      </a>
+      <a
+        class="icon"
+        href="https://www.facebook.com/JurgenMusic/"
+        target="_blank"
+      >
+        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+</span>
+      </a>
+      <a
+        class="icon"
+        href="https://soundcloud.com/jonathanrhodesmusic"
+        target="_blank"
+      >
+        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z"/></svg>
+</span>
+      </a>
+    </p>
+  </section> -->
+
+<script>
+
+  checkOrientation()
+  window.addEventListener("resize", checkOrientation);
+
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  var iframe;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'D_9uSH5_Yo8',
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    iframe = document.getElementById('player');
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      this.showEndOverlay()
+    }
+  }
+
+  function startVideo() {
+    player.playVideo();
+    requestFullScreen();
+    hideOverlay('overlay-start')
+  }
+
+  function stopVideo() {
+    player.stopVideo();
+  }
+
+  function requestFullScreen(){
+
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+      requestFullScreen.bind(iframe)();
+    }
+
+  }
+
+  function endFullScreen(){
+
+    document.exitFullscreen();
+
+  }
+
+  function showEndOverlay(){
+    endFullScreen();
+    showOverlay('overlay-end')
+  }
+
+  // Orientation
+
+  function checkOrientation(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    if (w < h){
+      showOrientationWarning();
+    } else {
+      hideOverlay('overlay-orientation');
+    }
+  }
+
+  function showOrientationWarning() {
+    
+    showOverlay('overlay-orientation');
+
+    // auto hide after a while
+    setTimeout(() => {
+      hideOverlay('overlay-orientation');
+    }, 10000)
+  }
+
+  function showOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.add('visible');
+  }
+
+  function hideOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.remove('visible');
+  }
+
+</script>
 
         </div></body>
 </html>

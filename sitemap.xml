@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jonathanrhodes.nl/epk/general/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://jonathanrhodes.nl/ad/</loc>
   </url>
   
