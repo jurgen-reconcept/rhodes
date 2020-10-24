@@ -1,0 +1,48 @@
+.live {
+  .overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    transition: opacity 1s;
+    opacity: 0;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &:not(.visible){
+      pointer-events: none;
+    }
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  .phone-image {
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    .inner {
+
+      border: 1px solid white;
+      border-radius: 2px;
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      top: 4px;
+      bottom: 4px;
+    }
+  }
+}

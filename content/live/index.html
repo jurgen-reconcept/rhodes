@@ -6,25 +6,39 @@ type: page
 bodyClass: "black"
 ---
 
-<div class="container container-live">
-  <div class="video-container">
-    <!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/D_9uSH5_Yo8?controls=1"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      webkitallowfullscreen
-      mozallowfullscreen
-      allowfullscreen
-    ></iframe>
+<!-- <iframe src="https://player.vimeo.com/video/341588253?&title=0&color=456990&byline=0&portrait=0&playsinline=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+<div class="live">
+  
+  <div id="overlay-start" class="overlay visible">
+    <p>
+      Je bent bij een show van Jonathan Rhodes. Leuk man!
+    </p>
+    <p>
+      Bij het nummer <i>Time & Money</i> hoort een live videoclip op je telefoon.
+      <!-- Hij begint vanzelf. -->
+      Klik op de knop zodra we beginnen te spelen.
+    </p>
+    <a href="#" onclick="startVideo()">
+      Start!
+    </a>
   </div>
 
-  <section class="center">
-    <!-- <div class="section-title">
-      Thanks for coming
-    </div> -->
-    <!-- <p>Tap to follow</p> -->
+  <!-- warning for portrait phones -->
+  <div id="overlay-orientation" class="overlay">
+    <p>
+      Draai je scherm een kwartslag. Dat staat een stuk beter.
+    </p>
+    <div class="phone-image">
+      <div class="inner"></div>
+    </div>
+  </div>
+
+  <div id="player"></div>
+
+  <div id="overlay-end" class="overlay">
+    <p>
+      Vond je dit te gek? Volg ons om op de hoogte te blijven!
+    </p>
 
     <p>
       <a
@@ -49,5 +63,139 @@ bodyClass: "black"
         {{% fontawesome soundcloud %}}
       </a>
     </p>
-  </section>
+  </div>
+
 </div>
+
+
+<!-- 
+
+  <section class="center">
+
+    <p>
+      <a
+        class="icon"
+        href="https://www.instagram.com/jonathan.rhodes.music/"
+        target="_blank"
+      >
+        {{% fontawesome instagram %}}
+      </a>
+      <a
+        class="icon"
+        href="https://www.facebook.com/JurgenMusic/"
+        target="_blank"
+      >
+        {{% fontawesome facebook %}}
+      </a>
+      <a
+        class="icon"
+        href="https://soundcloud.com/jonathanrhodesmusic"
+        target="_blank"
+      >
+        {{% fontawesome soundcloud %}}
+      </a>
+    </p>
+  </section> -->
+
+<script>
+
+  checkOrientation()
+  window.addEventListener("resize", checkOrientation);
+
+  // 2. This code loads the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // 3. This function creates an <iframe> (and YouTube player)
+  //    after the API code downloads.
+  var player;
+  var iframe;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'D_9uSH5_Yo8',
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+    iframe = document.getElementById('player');
+  }
+
+  // 5. The API calls this function when the player's state changes.
+  //    The function indicates that when playing a video (state=1),
+  //    the player should play for six seconds and then stop.
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      this.showEndOverlay()
+    }
+  }
+
+  function startVideo() {
+    player.playVideo();
+    requestFullScreen();
+    hideOverlay('overlay-start')
+  }
+
+  function stopVideo() {
+    player.stopVideo();
+  }
+
+  function requestFullScreen(){
+
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+      requestFullScreen.bind(iframe)();
+    }
+
+  }
+
+  function endFullScreen(){
+
+    document.exitFullscreen();
+
+  }
+
+  function showEndOverlay(){
+    endFullScreen();
+    showOverlay('overlay-end')
+  }
+
+  // Orientation
+
+  function checkOrientation(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    if (w < h){
+      showOrientationWarning();
+    } else {
+      hideOverlay('overlay-orientation');
+    }
+  }
+
+  function showOrientationWarning() {
+    
+    showOverlay('overlay-orientation');
+
+    // auto hide after a while
+    setTimeout(() => {
+      hideOverlay('overlay-orientation');
+    }, 10000)
+  }
+
+  function showOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.add('visible');
+  }
+
+  function hideOverlay(id){
+    var overlay = document.getElementById(id);
+    overlay.classList.remove('visible');
+  }
+
+</script>

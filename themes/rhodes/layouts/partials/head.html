@@ -18,15 +18,25 @@
   <meta content="website" property="og:type" />
   <meta content="{{ .Site.BaseURL }}" property="og:url" />
   <meta content="{{ .Description }}" property="og:description" />
-  <meta content="{{ .Site.BaseURL }}{{ .Param "featured_image" }}" property="og:image"/>
+  <meta content="{{ .Site.BaseURL }}{{ .Param "featured_image" }}"
+  property="og:image"/>
+
+  <!-- own javascript -->
+  <!-- {{ $script := resources.Get "scripts/main.js" }} {{ $built := $script | js.Build "main.js" }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script> -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175651455-1"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-175651455-1"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-175651455-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-175651455-1");
   </script>
 
   <!-- Facebook Pixel Code -->
@@ -61,7 +71,7 @@
     ><img
       height="1"
       width="1"
-      style="display: none;"
+      style="display: none"
       src="https://www.facebook.com/tr?id=714160709315339&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
