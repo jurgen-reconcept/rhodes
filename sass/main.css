@@ -275,6 +275,9 @@ img.cover-art {
   .container-blind-promo a.icon {
     color: white; }
 
+.live iframe {
+  width: 100%; }
+
 .live .overlay {
   position: fixed;
   left: 0;
