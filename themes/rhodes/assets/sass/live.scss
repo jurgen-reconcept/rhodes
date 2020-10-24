@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    overflow-y: scroll;
 
     &:not(.visible){
       pointer-events: none;
