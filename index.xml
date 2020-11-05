@@ -17,33 +17,6 @@
     
     <item>
       <title>Jonathan Rhodes - Blind</title>
-      <link>https://jonathanrhodes.nl/ad/money/apple/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonathanrhodes.nl/ad/money/apple/</guid>
-      <description> window.location.href = `https://music.apple.com/nl/album/time-money/1524021435?i=1524021437` </description>
-    </item>
-    
-    <item>
-      <title>Jonathan Rhodes - Blind</title>
-      <link>https://jonathanrhodes.nl/ad/money/spotify/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonathanrhodes.nl/ad/money/spotify/</guid>
-      <description> window.location.href = `https://open.spotify.com/track/41jUwA7iRYbtBZHjyUW88Q?si=j5lO6puxSeC3u9n68Ne0Uw` </description>
-    </item>
-    
-    <item>
-      <title>Jonathan Rhodes - Blind</title>
-      <link>https://jonathanrhodes.nl/ad/money/youtube/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonathanrhodes.nl/ad/money/youtube/</guid>
-      <description> window.location.href = `https://youtu.be/-WLH_61py9w` </description>
-    </item>
-    
-    <item>
-      <title>Jonathan Rhodes - Blind</title>
       <link>https://jonathanrhodes.nl/landing/blind/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -98,28 +71,28 @@
     
     <item>
       <title>Jonathan Rhodes - Seven</title>
-      <link>https://jonathanrhodes.nl/ad/seven/apple/</link>
+      <link>https://jonathanrhodes.nl/ad/seven/redirect/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jonathanrhodes.nl/ad/seven/apple/</guid>
+      <guid>https://jonathanrhodes.nl/ad/seven/redirect/apple/</guid>
       <description> window.location.href = `https://music.apple.com/nl/album/seven/1538341124?i=1538341125` </description>
     </item>
     
     <item>
       <title>Jonathan Rhodes - Seven</title>
-      <link>https://jonathanrhodes.nl/ad/seven/spotify/</link>
+      <link>https://jonathanrhodes.nl/ad/seven/redirect/spotify/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jonathanrhodes.nl/ad/seven/spotify/</guid>
+      <guid>https://jonathanrhodes.nl/ad/seven/redirect/spotify/</guid>
       <description> // window.location.href = `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ` window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA` </description>
     </item>
     
     <item>
       <title>Jonathan Rhodes - Seven</title>
-      <link>https://jonathanrhodes.nl/ad/seven/youtube/</link>
+      <link>https://jonathanrhodes.nl/ad/seven/redirect/youtube/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jonathanrhodes.nl/ad/seven/youtube/</guid>
+      <guid>https://jonathanrhodes.nl/ad/seven/redirect/youtube/</guid>
       <description> window.location.href = `https://www.youtube.com/watch?v=O09L4Pfr34w&amp;list=PLPDqZfSrJD0rEU0eIBWlJPwvN0sVsxAW1` </description>
     </item>
     
