@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  margin: 100px auto;
+  margin: 70px auto;
   width: 80%;
   max-width: 1200px;
 
@@ -309,6 +309,7 @@ img.cover-art {
   -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.41);
+  margin-bottom: 15px;
 }
 
 .clearfix::after {
