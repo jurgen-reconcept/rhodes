@@ -22,18 +22,25 @@ layout: single
   </section>
   <section class="center">
     <div class="listen-buttons">
-      <a id="spotify" class="listen-button" href="./redirect/spotify/">
+      <a id="spotify" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Seven to Spotify')">
         <div class="logo"><img src="/logos/spotify.png" /></div>
         <div class="button">Listen</div>
       </a>
-      <a id="apple" class="listen-button" href="./redirect/apple/">
+      <a id="apple" class="listen-button" href="./redirect/apple/" onclick="trackAdRedirectClick('Seven to Apple')">
         <div class="logo"><img src="/logos/apple.png" /></div>
         <div class="button">Listen</div>
       </a>
-      <a id="youtube" class="listen-button" href="./redirect/youtube/">
+      <a id="youtube" class="listen-button" href="./redirect/youtube/" onclick="trackAdRedirectClick('Seven to YouTube')">
         <div class="logo"><img src="/logos/youtube.png" /></div>
         <div class="button">Watch</div>
       </a>
     </div>
   </section>
 </div>
+
+<script type="text/JavaScript">
+  // set timeout to give GA a chance to load
+  setTimeout(()=>{
+    trackAdLandingArrived('Seven')
+  }, 300)
+</script>

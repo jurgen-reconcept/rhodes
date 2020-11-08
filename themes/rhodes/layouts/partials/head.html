@@ -22,8 +22,8 @@
   property="og:image"/>
 
   <!-- own javascript -->
-  <!-- {{ $script := resources.Get "scripts/main.js" }} {{ $built := $script | js.Build "main.js" }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script> -->
+  {{ $script := resources.Get "scripts/main.js" }} {{ $built := $script | js.Build "main.js" }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script

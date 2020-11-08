@@ -1,11 +1,17 @@
 ---
-title: "Jonathan Rhodes - Seven"
+title: "Jonathan Rhodes - Seven - Redirecting to YouTube"
 featured_image: "/cover-art/seven.jpg"
 description: "Jonathan Rhodes' new single Seven is out now"
 type: page
-bodyClass: "dark"
 ---
 
 <script type="text/JavaScript">
-  window.location.href = `https://youtu.be/HT5jR0W4mDU`
+
+  // set timeout to give GA a chance to load
+  setTimeout(()=>{
+    redirectToPage(
+      'Seven YouTube',
+      `https://youtu.be/HT5jR0W4mDU`
+    )
+  }, 300)
 </script>

@@ -1,12 +1,16 @@
 ---
-title: "Jonathan Rhodes - Seven"
+title: "Jonathan Rhodes - Seven - Redirecting to Spotify"
 featured_image: "/cover-art/seven.jpg"
 description: "Jonathan Rhodes' new single Seven is out now"
 type: page
-bodyClass: "dark"
 ---
 
 <script type="text/JavaScript">
-  window.location.href = `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ`
-  // window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA`
+  // set timeout to give GA a chance to load
+  setTimeout(()=>{
+    redirectToPage(
+      'Seven Spotify',
+      `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ`
+    )
+  }, 300)
 </script>

@@ -1,11 +1,17 @@
 ---
-title: "Jonathan Rhodes - Seven"
+title: "Jonathan Rhodes - Seven - Redirecting to Apple"
 featured_image: "/cover-art/seven.jpg"
 description: "Jonathan Rhodes' new single Seven is out now"
 type: page
-bodyClass: "dark"
 ---
 
 <script type="text/JavaScript">
-  window.location.href = `https://music.apple.com/nl/album/seven/1538341124?i=1538341125`
+
+  // set timeout to give GA a chance to load
+  setTimeout(()=>{
+    redirectToPage(
+      'Seven Apple',
+      `https://music.apple.com/nl/album/seven/1538341124?i=1538341125`
+    )
+  }, 300)
 </script>
