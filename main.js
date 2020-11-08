@@ -17,7 +17,7 @@
     trackAdEvent("Arrived on Landing Page", eventLabel, 0);
   }
   function trackRedirect(eventLabel) {
-    trackAdEvent("Redirect", eventLabel, 0);
+    trackAdEvent("Redirect", eventLabel, 1);
   }
   function redirectToPage(eventLabel, url) {
     try {
