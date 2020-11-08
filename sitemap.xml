@@ -51,18 +51,6 @@
   </url>
   
   <url>
-    <loc>https://jonathanrhodes.nl/ad/seven/redirect/apple/</loc>
-  </url>
-  
-  <url>
-    <loc>https://jonathanrhodes.nl/ad/seven/redirect/spotify/</loc>
-  </url>
-  
-  <url>
-    <loc>https://jonathanrhodes.nl/ad/seven/redirect/youtube/</loc>
-  </url>
-  
-  <url>
     <loc>https://jonathanrhodes.nl/landing/seven/</loc>
   </url>
   
@@ -76,6 +64,18 @@
   
   <url>
     <loc>https://jonathanrhodes.nl/landing/seven/youtube/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jonathanrhodes.nl/ad/seven/redirect/apple/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jonathanrhodes.nl/ad/seven/redirect/spotify/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jonathanrhodes.nl/ad/seven/redirect/youtube/</loc>
   </url>
   
   <url>
