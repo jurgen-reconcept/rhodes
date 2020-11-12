@@ -31,6 +31,13 @@ body {
     body.black a:not(.listen-button) {
       color: #f7f7f2;
       text-decoration: underline; }
+    body.black a.listen-button {
+      border-color: #68c3d4;
+      color: #68c3d4; }
+    body.black img.cover-art {
+      -webkit-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
+      -moz-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
+      box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2); }
 
 .container {
   margin: 70px auto;
@@ -39,6 +46,12 @@ body {
   .container.container-live {
     width: 100%;
     margin: 0 auto; }
+  .container.container-landing {
+    max-width: 300px;
+    margin: 20px auto;
+    width: auto; }
+    .container.container-landing .cover-art {
+      max-width: none; }
   .container .nav {
     display: flex;
     padding: 30px; }
@@ -135,10 +148,10 @@ a {
         max-width: 100px; }
     .listen-buttons a.listen-button .button {
       flex-grow: 0;
-      width: 100px;
+      width: 140px;
       border-radius: 2px;
       border: 1px solid #568ea3;
-      padding: 5px;
+      padding: 7px;
       margin-left: 20px;
       transition: background-color 0.3s; }
     .listen-buttons a.listen-button:hover .button {
