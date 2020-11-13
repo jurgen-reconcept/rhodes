@@ -102,7 +102,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/ad/seven/redirect/apple/</guid>
-      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Seven Apple&#39;, `https://music.apple.com/nl/album/seven/1538341124?i=1538341125` ) }, 300) </description>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Seven Apple&#39;, `https://music.apple.com/album/seven/1538341124?i=1538341125` ) }, 300) </description>
     </item>
     
     <item>
