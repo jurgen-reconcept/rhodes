@@ -81,7 +81,7 @@
     
 <div class="container container-landing">
   <section class="center">
-    <a id="coverart" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Seven to Spotify (coverart)')">
+    <a id="coverart" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Seven to Spotify')">
       <img class="cover-art" src="/cover-art/seven.jpg" />
     </a>
     <p>
@@ -94,19 +94,25 @@
     </p> -->
   </section>
   <section class="center">
-    <div class="listen-buttons">
+    <div class="listen-buttons expandable">
       <a id="spotify" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Seven to Spotify')">
         <div class="logo"><img src="/logos/spotify.png" /></div>
         <div class="button">Listen now!</div>
       </a>
-      <!-- <a id="apple" class="listen-button" href="./redirect/apple/" onclick="trackAdRedirectClick('Seven to Apple')">
+    
+      <a class="muted expanded-hidden no-decoration" href="#" onclick="expand()">
+        More options ▼
+      </a>
+
+      <a id="apple" class="listen-button expanded-visible" href="./redirect/apple/" onclick="trackAdRedirectClick('Seven to Apple')">
         <div class="logo"><img src="/logos/apple-dark.png" /></div>
         <div class="button">Listen now!</div>
-      </a> -->
-      <a id="youtube" class="listen-button" href="./redirect/youtube/" onclick="trackAdRedirectClick('Seven to YouTube')">
+      </a>
+      <a id="youtube" class="listen-button expanded-visible" href="./redirect/youtube/" onclick="trackAdRedirectClick('Seven to YouTube')">
         <div class="logo"><img src="/logos/youtube-dark.png" /></div>
         <div class="button">Watch now!</div>
       </a>
+
     </div>
   </section>
 </div>

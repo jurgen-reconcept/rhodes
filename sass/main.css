@@ -21,16 +21,18 @@ body {
     body.dark section .section-title {
       color: white; }
     body.dark a:not(.listen-button) {
-      color: #f7f7f2;
-      text-decoration: underline; }
+      color: #f7f7f2; }
+      body.dark a:not(.listen-button):not(.no-decoration) {
+        text-decoration: underline; }
   body.black {
     background: black;
     color: white; }
     body.black section .section-title {
       color: white; }
     body.black a:not(.listen-button) {
-      color: #f7f7f2;
-      text-decoration: underline; }
+      color: #f7f7f2; }
+      body.black a:not(.listen-button):not(.no-decoration) {
+        text-decoration: underline; }
     body.black a.listen-button {
       border-color: #68c3d4;
       color: #68c3d4; }
@@ -129,6 +131,12 @@ a {
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 10px; }
+
+.expandable.expanded .expanded-hidden {
+  display: none; }
+
+.expandable:not(.expanded) .expanded-visible {
+  display: none; }
 
 .listen-buttons {
   display: flex;
