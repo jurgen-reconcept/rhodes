@@ -19,7 +19,9 @@ body {
     }
     a:not(.listen-button) {
       color: $col-bg;
-      text-decoration: underline;
+      &:not(.no-decoration){
+        text-decoration: underline;
+      }
     }
 
     // bigger icons
@@ -38,7 +40,9 @@ body {
     }
     a:not(.listen-button) {
       color: $col-bg;
-      text-decoration: underline;
+      &:not(.no-decoration){
+        text-decoration: underline;
+      }
     }
     a.listen-button {
       border-color: $col-blue-2;
@@ -187,6 +191,15 @@ a {
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 10px;
+  }
+}
+
+.expandable {
+  &.expanded .expanded-hidden {
+    display: none;
+  }
+  &:not(.expanded) .expanded-visible {
+    display: none;
   }
 }
 

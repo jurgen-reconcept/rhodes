@@ -38,3 +38,12 @@ function redirectToPage(eventLabel, url){
 window.trackAdLandingArrived = trackAdLandingArrived;
 window.trackAdRedirectClick = trackAdRedirectClick;
 window.redirectToPage = redirectToPage;
+
+function expand(){
+  var elm = document.getElementsByClassName('expandable');
+  if(elm){
+    console.log(elm)
+    elm[0].classList.add('expanded');
+  }
+}
+window.expand = expand;
