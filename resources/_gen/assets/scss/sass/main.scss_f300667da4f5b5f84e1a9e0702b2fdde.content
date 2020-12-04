@@ -44,6 +44,11 @@ body {
   left: 0;
   bottom: 0; }
 
+.youtube-container {
+  padding: 10px;
+  background: #65532f;
+  margin-bottom: 30px; }
+
 .container {
   margin: 70px auto;
   width: 80%;
@@ -430,7 +435,7 @@ button, a.button {
   color: white;
   padding: 15px;
   border-radius: 2px;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Bebas Neue", sans-serif;
   outline: none;
   cursor: pointer; }
