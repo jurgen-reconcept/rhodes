@@ -5,8 +5,30 @@ $col-drab: #65532f;
 $col-pine: #262a10;
 $col-white: #f7f7f2;
 
+// green
+$c-green-dark: #007c58;
+$c-green: #00a676;
+$c-green-lightest: #d4f5eb;
+
+// yellow
+$c-yellow-dark: #a07500;
+$c-yellow: #fcba04;
+$c-yellow-lightest: #fff3d3;
+
+// red
+$c-red-dark: #ad3b1f;
+$c-red: #f06543;
+$c-red-lightest: #fce3dd;
+
+
 $col-bg: $col-white;
 $col-accent: $col-drab;
 $col-brand: $col-blue;
 $col-hover: $col-blue-2;
 $col-dark: $col-pine;
+
+$col-negative: $c-red; 
+$col-negative-bg: $c-red-lightest; 
+
+$col-positive: $c-green; 
+$col-positive-bg: $c-green-lightest; 

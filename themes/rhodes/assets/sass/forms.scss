@@ -1,0 +1,63 @@
+
+.notification {
+  padding: 15px;
+  margin-bottom: 10px;
+
+  &.notification-positive {
+    color: $col-positive;
+    background: $col-positive-bg;
+  }
+
+  &.notification-negative {
+    color: $col-negative;
+    background: $col-negative-bg;
+  }
+}
+
+// hide SIB messages by default
+.sib-form-message-panel {
+  display: none;
+}
+.sib-form-message-panel--active {
+  display: block;
+}
+
+button, a.button {
+  display: inline-block;
+  border: none;
+  text-decoration: none !important;
+  background: $col-blue;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  outline: none;
+  cursor: pointer;
+  &:active {
+    background: $col-blue-2;
+  }
+}
+
+.form-row {
+  margin-bottom: 10px;
+
+  label {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    padding: 15px;
+    border: 1px solid $col-drab;
+    background: $col-white;
+    color: $col-pine;
+    outline: none;
+    width: 100%;
+    &:focus {
+      border-color: $col-blue-2;
+    }
+  }
+}

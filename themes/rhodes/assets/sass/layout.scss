@@ -14,7 +14,7 @@ body {
     background: $col-dark;
     color: white;
 
-    section .section-title {
+    section .section-title, section h2, section h3 {
       color: white;
     }
     a:not(.listen-button) {
@@ -35,7 +35,7 @@ body {
     background: black;
     color: white;
 
-    section .section-title {
+    section .section-title, section h2, section h3 {
       color: white;
     }
     a:not(.listen-button) {
@@ -49,12 +49,21 @@ body {
       color: $col-blue-2;
     }
 
-    img.cover-art {
+    img.cover-art.light-shadow {
       -webkit-box-shadow: 0px 4px 18px 0px rgba($col-bg,.2);
       -moz-box-shadow: 0px 4px 18px 0px rgba($col-bg,.2);
       box-shadow: 0px 4px 18px 0px rgba($col-bg,.2);
     }
   }
+}
+
+.player-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  bottom: 0;
 }
 
 .container {
@@ -88,7 +97,7 @@ body {
       .nav-link {
         color: $col-dark;
         font-size: 24px;
-        font-family: "Jasper Daniels";
+        font-family: "Bebas Neue";
         text-decoration: none;
         transition: border-bottom-color 0.3s;
         border-bottom: 2px solid transparent;
@@ -104,27 +113,61 @@ body {
   section {
     margin-bottom: 50px;
 
-    .section-title {
+    h2, h3, .section-title {
       text-align: center;
-      font-family: "Jasper Daniels";
+      font-family: "Bebas Neue";
       color: $col-dark;
       font-size: 42px;
-      padding: 30px;
+      font-weight: normal;
       padding-top: 0;
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    .section-title {
+      padding: 30px;
     }
 
     $m: 30px;
     .row {
       margin-left: -$m;
       margin-right: -$m;
+      &:not(:last-child){
+        margin-bottom: $m;
+      }
       display: flex;
-      flex-wrap: wrap-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      &.wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &.v-center {
+        align-items: center;
+      }
 
       .col {
         flex: 1;
         padding-left: $m;
         padding-right: $m;
         min-width: 400px;
+
+        &.flex-0 {
+          flex: 0 0 auto;
+          min-width: 0;
+        }
+
+        @media only screen and (min-width: 1000px) {
+          &.col-50 {
+            flex: .5;
+          }
+        }
 
         &.col-bg-black {
           background: black;
@@ -141,6 +184,9 @@ body {
 
     &.accent {
       background-color: $col-blue;
+      &.accent-2 {
+        background-color: $col-drab;
+      }
       color: white;
       a {
         color: rgba(white, 0.7);
@@ -160,12 +206,20 @@ p {
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
 .left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .muted {
   opacity: 0.4;
+}
+
+.hidden {
+  display: none;
 }
 
 a {
@@ -266,6 +320,10 @@ a {
     height: 450px;
   }
 
+  &.medium {
+    height: 150px;
+  }
+
   display: flex;
   align-content: center;
   align-items: center;
@@ -291,10 +349,19 @@ a {
 }
 
 .image-container-promo {
-  margin: 30px;
+  margin: 0;
   margin-bottom: 0;
-  background-image: url("/fotos/band3.jpg");
+  background-image: url("/website-bg.jpg");
   background-attachment: initial;
+  position: relative;
+
+  .follow-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .separator {

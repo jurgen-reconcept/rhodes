@@ -1,11 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
-@font-face {
-  font-family: "Jasper Daniels";
-  src: url("/JasperDaniels.woff2") format("woff2"), url("/JasperDaniels.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -18,7 +13,7 @@ body {
   body.dark {
     background: #262a10;
     color: white; }
-    body.dark section .section-title {
+    body.dark section .section-title, body.dark section h2, body.dark section h3 {
       color: white; }
     body.dark a:not(.listen-button) {
       color: #f7f7f2; }
@@ -27,7 +22,7 @@ body {
   body.black {
     background: black;
     color: white; }
-    body.black section .section-title {
+    body.black section .section-title, body.black section h2, body.black section h3 {
       color: white; }
     body.black a:not(.listen-button) {
       color: #f7f7f2; }
@@ -36,10 +31,18 @@ body {
     body.black a.listen-button {
       border-color: #68c3d4;
       color: #68c3d4; }
-    body.black img.cover-art {
+    body.black img.cover-art.light-shadow {
       -webkit-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
       -moz-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
       box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2); }
+
+.player-container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  bottom: 0; }
 
 .container {
   margin: 70px auto;
@@ -63,7 +66,7 @@ body {
       .container .nav .nav-item .nav-link {
         color: #262a10;
         font-size: 24px;
-        font-family: "Jasper Daniels";
+        font-family: "Bebas Neue";
         text-decoration: none;
         transition: border-bottom-color 0.3s;
         border-bottom: 2px solid transparent; }
@@ -71,23 +74,42 @@ body {
           border-bottom: 2px solid #568ea3; }
   .container section {
     margin-bottom: 50px; }
-    .container section .section-title {
+    .container section h2, .container section h3, .container section .section-title {
       text-align: center;
-      font-family: "Jasper Daniels";
+      font-family: "Bebas Neue";
       color: #262a10;
       font-size: 42px;
-      padding: 30px;
+      font-weight: normal;
       padding-top: 0; }
+    .container section h2, .container section h3 {
+      margin-top: 0; }
+    .container section h3 {
+      font-size: 36px; }
+    .container section .section-title {
+      padding: 30px; }
     .container section .row {
       margin-left: -30px;
       margin-right: -30px;
       display: flex;
-      flex-wrap: wrap-reverse; }
+      flex-wrap: wrap;
+      justify-content: center; }
+      .container section .row:not(:last-child) {
+        margin-bottom: 30px; }
+      .container section .row.wrap-reverse {
+        flex-wrap: wrap-reverse; }
+      .container section .row.v-center {
+        align-items: center; }
       .container section .row .col {
         flex: 1;
         padding-left: 30px;
         padding-right: 30px;
         min-width: 400px; }
+        .container section .row .col.flex-0 {
+          flex: 0 0 auto;
+          min-width: 0; }
+        @media only screen and (min-width: 1000px) {
+          .container section .row .col.col-50 {
+            flex: .5; } }
         .container section .row .col.col-bg-black {
           background: black; }
         .container section .row .col.col-bg-white {
@@ -97,6 +119,8 @@ body {
     .container section.accent {
       background-color: #568ea3;
       color: white; }
+      .container section.accent.accent-2 {
+        background-color: #65532f; }
       .container section.accent a {
         color: rgba(255, 255, 255, 0.7); }
         .container section.accent a:hover {
@@ -108,11 +132,17 @@ p {
 .center {
   text-align: center; }
 
+.right {
+  text-align: right; }
+
 .left {
-  text-align: left; }
+  text-align: left !important; }
 
 .muted {
   opacity: 0.4; }
+
+.hidden {
+  display: none; }
 
 a {
   color: #568ea3;
@@ -190,6 +220,8 @@ a {
   color: white; }
   .image-container.big {
     height: 450px; }
+  .image-container.medium {
+    height: 150px; }
   .image-container img.logo {
     width: 260px;
     opacity: 0;
@@ -204,10 +236,17 @@ a {
     animation-delay: 0.8s; }
 
 .image-container-promo {
-  margin: 30px;
+  margin: 0;
   margin-bottom: 0;
-  background-image: url("/fotos/band3.jpg");
-  background-attachment: initial; }
+  background-image: url("/website-bg.jpg");
+  background-attachment: initial;
+  position: relative; }
+  .image-container-promo .follow-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: center; }
 
 .separator {
   height: 30px;
@@ -366,3 +405,51 @@ img.cover-art {
     color: black;
     text-decoration: none;
     font-size: larger; }
+
+.notification {
+  padding: 15px;
+  margin-bottom: 10px; }
+  .notification.notification-positive {
+    color: #00a676;
+    background: #d4f5eb; }
+  .notification.notification-negative {
+    color: #f06543;
+    background: #fce3dd; }
+
+.sib-form-message-panel {
+  display: none; }
+
+.sib-form-message-panel--active {
+  display: block; }
+
+button, a.button {
+  display: inline-block;
+  border: none;
+  text-decoration: none !important;
+  background: #568ea3;
+  color: white;
+  padding: 15px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  outline: none;
+  cursor: pointer; }
+  button:active, a.button:active {
+    background: #68c3d4; }
+
+.form-row {
+  margin-bottom: 10px; }
+  .form-row label {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%; }
+  .form-row input {
+    padding: 15px;
+    border: 1px solid #65532f;
+    background: #f7f7f2;
+    color: #262a10;
+    outline: none;
+    width: 100%; }
+    .form-row input:focus {
+      border-color: #68c3d4; }
