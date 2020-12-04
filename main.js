@@ -1,5 +1,5 @@
 (() => {
-  // main.js
+  // scripts/main.js
   function trackAdEvent(eventAction, eventLabel, eventValue) {
     if (!ga) {
       console.log("no ga");
