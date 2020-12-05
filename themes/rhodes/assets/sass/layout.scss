@@ -199,6 +199,21 @@ body {
       padding: 30px;
     }
 
+    &.section-photo-live {
+      background: url(/fotos/live.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .text-container {
+        padding: 30px;
+        background-color: rgba(black, .4);
+      }
+    }
+
     &.accent {
       background-color: $col-blue;
       &.accent-2 {
