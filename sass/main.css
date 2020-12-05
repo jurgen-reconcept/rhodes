@@ -127,6 +127,17 @@ body {
           background: white; }
     .container section.padded {
       padding: 30px; }
+    .container section.section-photo-live {
+      background: url(/fotos/live.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .container section.section-photo-live .text-container {
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4); }
     .container section.accent {
       background-color: #568ea3;
       color: white; }
