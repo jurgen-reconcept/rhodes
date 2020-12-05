@@ -49,6 +49,9 @@ body {
   background: #65532f;
   margin-bottom: 30px; }
 
+.bit-widget-container * {
+  text-decoration: none !important; }
+
 .container {
   margin: 70px auto;
   width: 80%;
@@ -112,6 +115,9 @@ body {
         .container section .row .col.flex-0 {
           flex: 0 0 auto;
           min-width: 0; }
+        @media only screen and (max-width: 900px) {
+          .container section .row .col {
+            flex-basis: 100%; } }
         @media only screen and (min-width: 1000px) {
           .container section .row .col.col-50 {
             flex: .5; } }

@@ -72,6 +72,13 @@ body {
   margin-bottom: 30px;
 }
 
+// bands in town
+.bit-widget-container {
+  * {
+    text-decoration: none !important;
+  }
+}
+
 .container {
   margin: 70px auto;
   width: 80%;
@@ -167,6 +174,10 @@ body {
         &.flex-0 {
           flex: 0 0 auto;
           min-width: 0;
+        }
+
+        @media only screen and (max-width: 900px) {
+          flex-basis: 100%;
         }
 
         @media only screen and (min-width: 1000px) {
