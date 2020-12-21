@@ -24,6 +24,10 @@ function trackRedirect(eventLabel){
     trackAdEvent('Redirect', eventLabel, 1)
 }
 
+function trackNewsletterSubscribed(){
+  trackAdEvent('Newsletter Subscribed', 'Newsletter Subscribed', 1)
+}
+
 function redirectToPage(eventLabel, url){
   try {
     trackRedirect(eventLabel);
