@@ -8,6 +8,17 @@
     <language>en-us</language><atom:link href="https://jonathanrhodes.nl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jonathan Rhodes</title>
+      <link>https://jonathanrhodes.nl/ad/hey-sister-pre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/ad/hey-sister-pre/</guid>
+      <description>Access your free song now!   Fill out your email below and get immediate access to our new unreleased single Hey Sister. &amp;nbsp;
+Your subscription could not be saved. Please try again.  Good for you, you insider!  Your email address    Subscribe!       &amp;nbsp;
+By signing up to the Jonathan Rhodes insider newsletter you get exclusive footage and early releases in your mailbox.</description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes</title>
       <link>https://jonathanrhodes.nl/newsletter-subscribe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,7 +35,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <guid>https://jonathanrhodes.nl/newsletter-subscribed/</guid>
       <description>    You did it!   You are now subscribed to the Jonathan Rhodes Insider Newsletter. Check out your early release reward :) &amp;nbsp;
     Jonathan Rhodes · Hey Sister      While you&#39;re at it, take some time to follow us on Spotify!                &amp;nbsp;
-   </description>
+    // set timeout to give GA a chance to load setTimeout(()={ trackNewsletterSubscribed() }, 300) </description>
     </item>
     
     <item>
