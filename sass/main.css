@@ -10,32 +10,17 @@ body {
   font-family: "Merriweather", serif;
   font-size: 15px;
   font-weight: lighter;
-  background: #f7f7f2; }
-  body.dark {
-    background: #262a10;
+  background: black;
+  color: white; }
+  body section .section-title, body section h2, body section h3 {
     color: white; }
-    body.dark section .section-title, body.dark section h2, body.dark section h3 {
-      color: white; }
-    body.dark a:not(.listen-button) {
-      color: #f7f7f2; }
-      body.dark a:not(.listen-button):not(.no-decoration) {
-        text-decoration: underline; }
-  body.black {
-    background: black;
-    color: white; }
-    body.black section .section-title, body.black section h2, body.black section h3 {
-      color: white; }
-    body.black a:not(.listen-button) {
-      color: #f7f7f2; }
-      body.black a:not(.listen-button):not(.no-decoration) {
-        text-decoration: underline; }
-    body.black a.listen-button {
-      border-color: #68c3d4;
-      color: #68c3d4; }
-    body.black img.cover-art.light-shadow {
-      -webkit-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
-      -moz-box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2);
-      box-shadow: 0px 4px 18px 0px rgba(247, 247, 242, 0.2); }
+  body a.listen-button {
+    border-color: #68c3d4;
+    color: #68c3d4; }
+  body img.cover-art.light-shadow {
+    -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2); }
 
 .player-container {
   position: fixed;
@@ -86,7 +71,7 @@ body {
     .container section h2, .container section h3, .container section .section-title {
       text-align: center;
       font-family: "Bebas Neue";
-      color: #262a10;
+      color: white;
       font-size: 42px;
       font-weight: normal;
       padding-top: 0; }
@@ -145,7 +130,8 @@ body {
       .container section.accent.accent-2 {
         background-color: #65532f; }
       .container section.accent a {
-        color: rgba(255, 255, 255, 0.7); }
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: underline; }
         .container section.accent a:hover {
           color: white; }
 
@@ -168,12 +154,11 @@ p {
   display: none; }
 
 a {
-  color: #568ea3;
+  color: #68c3d4;
   transition: color 0.4s;
   text-decoration: none; }
-  a:hover {
-    color: #68c3d4; }
   a.icon {
+    color: white;
     font-size: 20px;
     margin: 10px;
     text-decoration: none !important; }
@@ -184,6 +169,8 @@ a {
     border: 1px solid white;
     margin-bottom: 30px;
     padding: 10px; }
+  a:hover {
+    color: #568ea3; }
 
 .expandable.expanded .expanded-hidden {
   display: none; }
@@ -456,8 +443,11 @@ button, a.button {
   font-size: 24px;
   font-family: "Bebas Neue", sans-serif;
   outline: none;
-  cursor: pointer; }
-  button:active, a.button:active {
+  cursor: pointer;
+  transition: background-color .3s; }
+  button.spotify, a.button.spotify {
+    background: #1DB954; }
+  button:active, button:focus, button:hover, a.button:active, a.button:focus, a.button:hover {
     background: #68c3d4; }
 
 .form-row {
