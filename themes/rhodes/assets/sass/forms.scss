@@ -34,7 +34,12 @@ button, a.button {
   font-family: "Bebas Neue", sans-serif;
   outline: none;
   cursor: pointer;
-  &:active {
+  transition: background-color .3s;
+
+  &.spotify {
+    background: $col-spotify;
+  }
+  &:active, &:focus, &:hover {
     background: $col-blue-2;
   }
 }
