@@ -103,6 +103,60 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
     </item>
     
     <item>
+      <title>Jonathan Rhodes - Hey Sister</title>
+      <link>https://jonathanrhodes.nl/landing/hey-sister/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/hey-sister/apple/</guid>
+      <description> window.location.href = `https://music.apple.com/nl/album/hey-sister/1538341124?i=1538341125` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Hey Sister</title>
+      <link>https://jonathanrhodes.nl/landing/hey-sister/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/hey-sister/spotify/</guid>
+      <description> // window.location.href = `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ` window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Hey Sister</title>
+      <link>https://jonathanrhodes.nl/landing/hey-sister/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/landing/hey-sister/youtube/</guid>
+      <description> window.location.href = `https://youtu.be/HT5jR0W4mDU` </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Hey Sister - Redirecting to Apple</title>
+      <link>https://jonathanrhodes.nl/ad/hey-sister/redirect/apple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/apple/</guid>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Apple&#39;, `https://music.apple.com/album/hey-sister/1538341124?i=1538341125` ) }, 300) </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Hey Sister - Redirecting to Spotify</title>
+      <link>https://jonathanrhodes.nl/ad/hey-sister/redirect/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/spotify/</guid>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Spotify&#39;, `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ` ) }, 300) </description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes - Hey Sister - Redirecting to YouTube</title>
+      <link>https://jonathanrhodes.nl/ad/hey-sister/redirect/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/youtube/</guid>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister YouTube&#39;, `https://www.youtube.com/watch?v=HT5jR0W4mDU&amp;list=PLPDqZfSrJD0qDZ9VDQVEDG-1acTCmjxGp&amp;index=1&amp;ab_channel=JonathanRhodes` // `https://youtu.be/HT5jR0W4mDU` ) }, 300) </description>
+    </item>
+    
+    <item>
       <title>Jonathan Rhodes - Seven</title>
       <link>https://jonathanrhodes.nl/landing/seven/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
