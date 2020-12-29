@@ -1,0 +1,52 @@
+---
+title: "Jonathan Rhodes - Hey Sister"
+featured_image: "cover-art/hey-sister.jpg"
+description: "Jonathan Rhodes' new single Hey Sister is out now"
+type: page
+layout: single
+---
+
+<div class="container container-landing">
+  <section class="center">
+    <a id="coverart" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Hey Sister to Spotify')">
+      <img class="cover-art light-shadow" src="/cover-art/hey-sister.jpg" />
+    </a>
+    <p>
+      <b>
+        Jonathan Rhodes - Hey Sister
+      </b>
+    </p>
+    <!-- <p>
+      Choose your music service to listen:
+    </p> -->
+  </section>
+  <section class="center">
+    <div class="listen-buttons expandable">
+      <a id="spotify" class="listen-button" href="./redirect/spotify/" onclick="trackAdRedirectClick('Hey Sister to Spotify')">
+        <div class="logo"><img src="/logos/spotify.png" /></div>
+        <div class="button">Listen now!</div>
+      </a>
+    
+      <a class="muted expanded-hidden no-decoration" href="#" onclick="expand()">
+        More options ▼
+      </a>
+
+      <a id="apple" class="listen-button expanded-visible" href="./redirect/apple/" onclick="trackAdRedirectClick('Hey Sister to Apple')">
+        <div class="logo"><img src="/logos/apple-dark.png" /></div>
+        <div class="button">Listen now!</div>
+      </a>
+      <a id="youtube" class="listen-button expanded-visible" href="./redirect/youtube/" onclick="trackAdRedirectClick('Hey Sister to YouTube')">
+        <div class="logo"><img src="/logos/youtube-dark.png" /></div>
+        <div class="button">Watch now!</div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<script type="text/JavaScript">
+  // set timeout to give GA a chance to load
+  setTimeout(()=>{
+    trackAdLandingArrived('Hey Sister')
+  }, 300)
+</script>
