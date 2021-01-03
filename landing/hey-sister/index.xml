@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/landing/hey-sister/apple/</guid>
-      <description> window.location.href = `https://music.apple.com/nl/album/hey-sister/1538341124?i=1538341125` </description>
+      <description> window.location.href = `https://music.apple.com/nl/artist/jonathan-rhodes/1501153325` </description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/landing/hey-sister/spotify/</guid>
-      <description> // window.location.href = `https://play.spotify.com/track/4ttgfBGRK7Gr5g6HNiFfGx?si=VrtSgmkoRBiBSFssw2gbIQ` window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA` </description>
+      <description> window.location.href = `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` // window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA` </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/landing/hey-sister/youtube/</guid>
-      <description> window.location.href = `https://youtu.be/HT5jR0W4mDU` </description>
+      <description> window.location.href = `https://youtu.be/CE7JEG7YmUA` </description>
     </item>
     
   </channel>
