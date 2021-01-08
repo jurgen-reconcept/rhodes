@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/apple/</guid>
-      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Apple&#39;, `https://music.apple.com/nl/artist/jonathan-rhodes/1501153325` ) }, 300) </description>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Apple&#39;, `https://music.apple.com/us/album/hey-sister-single/1543315872?uo=4&amp;app=music&amp;at=1001lry3&amp;ct=dashboard` ) }, 300) </description>
     </item>
     
     <item>
@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/spotify/</guid>
-      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Spotify&#39;, `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` ) }, 300) </description>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Spotify&#39;, // &#39;https://open.spotify.com/artist/7iKI0f5q3WmoeNUY5xOnU8?si=yicF0zRsRK2QMTaI96DtVg&#39; `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` ) }, 300) </description>
     </item>
     
     <item>
