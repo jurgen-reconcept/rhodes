@@ -1,7 +1,7 @@
 <head>
   <title>{{.Title}}</title>
   {{ $sass := resources.Get "sass/main.scss" }} {{ $style := $sass | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  <link rel="stylesheet" href="{{ $style.Permalink }}?{{ now.Unix }}" />
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
 
   <!-- own javascript -->
   {{ $script := resources.Get "scripts/main.js" }} {{ $built := $script | js.Build "main.js" }}
-  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+  <script type="text/javascript" src="{{ $built.RelPermalink }}?{{ now.Unix }}" defer></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
