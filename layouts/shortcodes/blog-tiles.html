@@ -1,0 +1,17 @@
+<div class="tiles">
+
+  {{ range (where .Site.RegularPages ".Type" "blog") }}
+
+  <a class="tile" href="{{ .Permalink }}">
+    <div class="tile-background" style="background-image: url({{ .Param "featured_image" }})"></div>
+    <div class="tile-content">
+      <h3>
+        {{ .Title }}
+      </h3>
+      <!-- {{ .Content }} -->
+    </div>
+  </a>
+
+  {{ end }}
+
+</div>

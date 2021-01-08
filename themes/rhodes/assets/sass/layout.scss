@@ -44,7 +44,7 @@ body {
 
 .youtube-container {
   padding: 10px;
-  background: $col-drab;
+  background: $col-blue;
   margin-bottom: 30px;
 }
 .container {
@@ -423,7 +423,52 @@ img.cover-art {
   margin-bottom: 15px;
 }
 
-.tile {
+.tiles {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px;
+  justify-content: center;
+
+  .tile {
+
+    flex: 0 0 auto;
+    position: relative;
+    height: 390px;
+    width: 390px;
+    
+    margin: 15px;
+
+    .tile-background {
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tile-content {
+      position: absolute;
+      padding: 30px;
+      z-index: 1;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+      padding-top: 150px;
+
+      h3 {
+        font-size: 2em;
+        line-height: 1.2em;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
 
 }
 
