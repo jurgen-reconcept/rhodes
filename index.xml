@@ -163,7 +163,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/landing/hey-sister/spotify/</guid>
-      <description> window.location.href = `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` // window.location.href = `https://play.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=aOcA1sIsRK-ryGJEPZ-CyA` </description>
+      <description> // window.location.href = `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` window.location.href = `https://open.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=CgDwlKQzRx6R4q0MdMtZOw` </description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/ad/hey-sister/redirect/spotify/</guid>
-      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Spotify&#39;, // `https://open.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=CgDwlKQzRx6R4q0MdMtZOw` // &#39;https://open.spotify.com/artist/7iKI0f5q3WmoeNUY5xOnU8?si=yicF0zRsRK2QMTaI96DtVg&#39; `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` ) }, 300) </description>
+      <description> // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Hey Sister Spotify&#39;, `https://open.spotify.com/playlist/2SjCCpYUxq1PLvB1JYhiFZ?si=CgDwlKQzRx6R4q0MdMtZOw` // &#39;https://open.spotify.com/artist/7iKI0f5q3WmoeNUY5xOnU8?si=yicF0zRsRK2QMTaI96DtVg&#39; // `https://open.spotify.com/track/0jOU9TzIVXnPrsGkEXthlj` ) }, 300) </description>
     </item>
     
     <item>
