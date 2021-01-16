@@ -31,9 +31,23 @@ body {
   bottom: 0; }
 
 .youtube-container {
-  padding: 10px;
+  padding: 5px;
   background: #568ea3;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 300px;
+  max-width: 300px;
+  height: 168.75px; }
+  @media only screen and (max-width: 1000px) {
+    .youtube-container {
+      margin-left: auto;
+      margin-right: auto; } }
+  @media only screen and (max-width: 1400px) {
+    .youtube-container {
+      width: 100% !important; } }
+  .youtube-container.large {
+    width: 400px;
+    max-width: 400px;
+    height: 225px; }
 
 .container {
   margin: 70px auto;
@@ -83,15 +97,19 @@ body {
       margin-right: -30px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .container section .row:not(:last-child) {
         margin-bottom: 30px; }
       .container section .row.wrap-reverse {
         flex-wrap: wrap-reverse; }
+      @media only screen and (min-width: 901px) {
+        .container section .row.no-wrap {
+          flex-wrap: nowrap; } }
       .container section .row.v-center {
         align-items: center; }
       .container section .row .col {
-        flex: 1;
+        flex: 1 1 auto;
         padding-left: 30px;
         padding-right: 30px;
         min-width: 200px; }
