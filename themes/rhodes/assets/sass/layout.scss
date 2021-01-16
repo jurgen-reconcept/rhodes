@@ -43,10 +43,33 @@ body {
 }
 
 .youtube-container {
-  padding: 10px;
+  padding: 5px;
   background: $col-blue;
   margin-bottom: 30px;
+
+  $w: 300px;
+  width: $w;
+  max-width: $w;
+  height: $w*9/16;
+
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 1400px) {
+    width: 100% !important;
+  }
+
+  &.large {
+    $w: 400px;
+    width: $w;
+    max-width: $w;
+    height: $w*9/16;
+  }
 }
+
 .container {
   margin: 70px auto;
   width: 80%;
@@ -125,8 +148,15 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
       &.wrap-reverse {
         flex-wrap: wrap-reverse;
+      }
+
+      &.no-wrap {
+        @media only screen and (min-width: 901px) {
+          flex-wrap: nowrap;
+        }
       }
 
       &.v-center {
@@ -134,7 +164,7 @@ body {
       }
 
       .col {
-        flex: 1;
+        flex: 1 1 auto;
         padding-left: $m;
         padding-right: $m;
         min-width: 200px;
