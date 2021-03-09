@@ -209,4 +209,12 @@
     <loc>https://jonathanrhodes.nl/tags/</loc>
   </url>
   
+  <url>
+    <loc>https://jonathanrhodes.nl/ad/tdd/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jonathanrhodes.nl/ad/tdd/redirect/spotify/</loc>
+  </url>
+  
 </urlset>

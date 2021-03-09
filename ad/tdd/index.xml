@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Them Dirty Dimes - In Gold We Trust on Jonathan Rhodes</title>
+    <link>https://jonathanrhodes.nl/ad/tdd/</link>
+    <description>Recent content in Them Dirty Dimes - In Gold We Trust on Jonathan Rhodes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jonathanrhodes.nl/ad/tdd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Them Dirty Dimes - In Gold We Trust - Redirecting to Spotify</title>
+      <link>https://jonathanrhodes.nl/ad/tdd/redirect/spotify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/ad/tdd/redirect/spotify/</guid>
+      <description>  !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=&#39;2.0&#39;; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,&#39;script&#39;, &#39;https://connect.facebook.net/en_US/fbevents.js&#39;); fbq(&#39;init&#39;, &#39;1040314463159516&#39;); fbq(&#39;track&#39;, &#39;PageView&#39;);   // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Them Dirty Dimes on Spotify&#39;, `https://open.spotify.com/artist/5ALoTX7C68nChnuiz2loRP` ) }, 300) </description>
+    </item>
+    
+  </channel>
+</rss>
