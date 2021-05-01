@@ -6,7 +6,16 @@
     <description>Recent content on Jonathan Rhodes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jonathanrhodes.nl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jonathanrhodes.nl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>See you at Bevrijdingsfestival Groningen</title>
+      <link>https://jonathanrhodes.nl/news/2021-05-01-bfg/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/news/2021-05-01-bfg/</guid>
+      <description>  We&#39;re playing at BevrijdingsFestival Groningen in honour of 76 years of freedom in The Netherlands. A sweet list of local acts will be playing, like Them Dirty Dimes. The event will be live streamed here. </description>
+    </item>
+    
     <item>
       <title>Hey Sister is out now!</title>
       <link>https://jonathanrhodes.nl/news/2021-01-08-hey-sister/</link>
@@ -35,7 +44,7 @@
     </item>
     
     <item>
-      <title>Selected for Hit The North</title>
+      <title>Participant of Hit The North</title>
       <link>https://jonathanrhodes.nl/news/2021-01-07-hit-the-north/</link>
       <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
       
@@ -71,7 +80,7 @@
       
       <guid>https://jonathanrhodes.nl/newsletter-subscribe/</guid>
       <description>Sign up for the Jonathan Rhodes Insider Newsletter   Be the first to know what&#39;s cooking by signing up to the insider newsletter. Get exclusive footage and early releases in your mailbox. We don&#39;t spam and you can unsubscribe any time! &amp;nbsp;
-Your subscription could not be saved. Please try again.  Good for you, you insider!  Your email address    Subscribe!            window.</description>
+Your subscription could not be saved. Please try again.  Good for you, you insider!   Subscribe!        window.</description>
     </item>
     
     <item>
@@ -80,8 +89,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/newsletter-subscribed/</guid>
-      <description>    You did it!   You are now subscribed to the Jonathan Rhodes Insider Newsletter. Check out your early release reward :) &amp;nbsp;
-    Jonathan Rhodes · Hey Sister      While you&#39;re at it, take some time to follow us on Spotify!                &amp;nbsp;
+      <description>    You did it!   You are now subscribed to the Jonathan Rhodes Insider Newsletter.      While you&#39;re at it, take a moment to follow us on Spotify!                &amp;nbsp;
     // set timeout to give GA a chance to load setTimeout(()={ trackNewsletterSubscribed() }, 300) </description>
     </item>
     
@@ -91,7 +99,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/social/</guid>
-      <description>  Listen to Hey Sister on Spotify!   - or -    Listen   Listen   Watch   Visit   Visit  &amp;nbsp;&amp;nbsp;Playlists  Listen  --  Visit     </description>
+      <description>  Subscribe to the Insider Newsletter!   - or -    Listen   Listen   Watch   Visit   Visit  &amp;nbsp;&amp;nbsp;Playlists  Listen  --  Visit     </description>
     </item>
     
     <item>
@@ -344,15 +352,6 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       
       <guid>https://jonathanrhodes.nl/epk/seven/</guid>
       <description>Jonathan RhodesSeven   Release type: single Track title: Seven Artist name: Jonathan Rhodes Release date: November 2nd 2020 ISRC: QZNWQ2043977 UPC: 195756742677    --  Audio (download .wav)      Press release    Jonathan Rhodes releases acoustic single &#39;Seven&#39; on life and death    Groningen, The Netherlands - November 4th 2020   In preparation for the Groningen (NL) regional Talent Award, americana songwriter Jonathan Rhodes today releases a surprise single.</description>
-    </item>
-    
-    <item>
-      <title>Them Dirty Dimes - In Gold We Trust - Redirecting to Spotify</title>
-      <link>https://jonathanrhodes.nl/ad/tdd/redirect/spotify/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonathanrhodes.nl/ad/tdd/redirect/spotify/</guid>
-      <description>  !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version=&#39;2.0&#39;; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,&#39;script&#39;, &#39;https://connect.facebook.net/en_US/fbevents.js&#39;); fbq(&#39;init&#39;, &#39;1040314463159516&#39;); fbq(&#39;track&#39;, &#39;PageView&#39;);   // set timeout to give GA a chance to load setTimeout(()={ redirectToPage( &#39;Them Dirty Dimes on Spotify&#39;, `https://open.spotify.com/artist/5ALoTX7C68nChnuiz2loRP` ) }, 300) </description>
     </item>
     
   </channel>
