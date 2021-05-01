@@ -19,78 +19,9 @@ description: "Jonathan Rhodes writes and performs songs with little pretence"
         </p>
         <p>&nbsp;</p> 
 
-        <!-- Begin Sendinblue Form -->
-
-        <div class="sib-form">
-          <div id="sib-form-container" class="sib-form-container">
-
-            <div id="error-message" class="sib-form-message-panel notification notification-negative">
-              Your subscription could not be saved. Please try again.
-            </div>
-
-            <div id="success-message" class="sib-form-message-panel notification notification-positive">
-              Good for you, you insider!
-            </div>
-
-            <div class="sib-container">
-
-              <form id="sib-form" method="POST" action="https://95cc09b2.sibforms.com/serve/MUIEANg_BTzJQkj13TzNt7H7WliW1DT0sepOHEvj6ss-if-dRgFF3x1WFWI9s5IEi2LettJaLbQK_LqI_Watq1WPfqRQKZ_oRn5Zel4pWm8YEwIcTxlG7D_7MwgDocmiGxdAF1FZPbAn0rExh5rnu70B8IWIDWQR22ZiMn_WjXOqnmkZQEj7RtA9fXiMpbitFYFSXoCK9qOhMROu" data-type="subscription">
-
-                <div class="form-row">
-                  <label for="EMAIL">
-                    Your email address
-                  </label>
-                  <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
-                </div>
-
-                <div class="form-row">
-                  <button form="sib-form" type="submit">
-                    <!-- element to comply with sib javascript -->
-                    <svg class="hidden"></svg>
-                    Subscribe!
-                  </button>
-                </div>
-
-                <input type="text" name="email_address_check" value="" class="input--hidden hidden">
-                <input type="hidden" name="locale" value="en">
-                
-              </form>
-              
-            </div>
-          </div>
-        </div>
-        <!-- End Sendinblue Form -->
+        {{< newsletter-subscribe-form >}}
 
       </div>
     </div>
   </section>
 </div>
-
-<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Something seems wrong with that information. Please try again.";
-
-  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
-  window.GENERIC_INVALID_MESSAGE = "Something seems wrong with that information. Please try again.";
-
-
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} list selected',
-      selectedLists: '{quantity} lists selected'
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-<script src="https://sibforms.com/forms/end-form/build/main.js">
-</script>
-
-
-<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-<!-- End Sendinblue Form -->

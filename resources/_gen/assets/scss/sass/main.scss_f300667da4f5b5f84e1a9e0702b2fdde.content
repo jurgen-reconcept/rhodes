@@ -520,3 +520,12 @@ button, a.button {
     width: 100%; }
     .form-row input:focus {
       border-color: #68c3d4; }
+
+.form-row-email {
+  display: flex; }
+  .form-row-email input {
+    flex: 1 1 auto; }
+  .form-row-email button {
+    flex: 0 0 auto;
+    padding: 5px 15px;
+    margin-left: 10px; }

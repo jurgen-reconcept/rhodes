@@ -66,3 +66,15 @@ button, a.button {
     }
   }
 }
+
+.form-row-email {
+  display: flex;
+  input {
+    flex: 1 1 auto;
+  }
+  button {
+    flex: 0 0 auto;
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+}
