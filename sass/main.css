@@ -326,9 +326,13 @@ img.cover-art {
   .tiles .tile {
     flex: 0 0 auto;
     position: relative;
-    height: 390px;
-    width: 390px;
+    height: 240px;
+    width: 240px;
     margin: 15px; }
+    @media only screen and (max-width: 599px) {
+      .tiles .tile {
+        width: 100%;
+        height: 180px; } }
     .tiles .tile .tile-background {
       z-index: 0;
       position: absolute;
@@ -348,7 +352,7 @@ img.cover-art {
       background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
       padding-top: 150px; }
       .tiles .tile .tile-content h3 {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 1.2em; }
         .tiles .tile .tile-content h3:last-child {
           margin: 0; }
