@@ -198,9 +198,10 @@ body {
     }
 
     &.section-photo-live {
-      background: url(/fotos/live.jpg);
+      background: url(/fotos/bfg_frontaal.jpg);
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       min-height: 300px;
       display: flex;
       align-items: center;
@@ -395,6 +396,12 @@ a {
   background-image: url("/website-bg.jpg");
   background-attachment: initial;
   position: relative;
+
+  &.photo2 {
+    background-image: url("/fotos/bfg_closeup.jpg");
+    background-position: center;
+    background-attachment: fixed;
+  }
 
   .follow-container {
     position: absolute;
