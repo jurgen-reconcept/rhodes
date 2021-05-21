@@ -510,6 +510,8 @@ button, a.button {
   transition: background-color .3s; }
   button.spotify, a.button.spotify {
     background: #1DB954; }
+  button.youtube, a.button.youtube {
+    background: #E62117; }
   button:active, button:focus, button:hover, a.button:active, a.button:focus, a.button:hover {
     background: #68c3d4; }
 
