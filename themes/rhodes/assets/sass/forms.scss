@@ -39,6 +39,9 @@ button, a.button {
   &.spotify {
     background: $col-spotify;
   }
+  &.youtube {
+    background: $col-youtube;
+  }
   &:active, &:focus, &:hover {
     background: $col-blue-2;
   }
