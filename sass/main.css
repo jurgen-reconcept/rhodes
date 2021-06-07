@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   box-sizing: border-box;
   line-height: 1.7em; }
@@ -15,24 +15,47 @@ body {
   body section .section-title, body section h2, body section h3 {
     color: white; }
   body a.listen-button {
-    border-color: #68c3d4;
-    color: #68c3d4; }
+    border-color: #E1B26B;
+    color: #eed3ab; }
   body img.cover-art.light-shadow {
     -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2); }
 
+body.print {
+  background: white;
+  color: black; }
+  body.print section .section-title, body.print section h2, body.print section h3 {
+    color: black; }
+
+@media print {
+  .image-container {
+    display: none !important; } }
+
 .player-container {
   position: fixed;
   z-index: 100;
-  width: 100%;
   height: 80px;
-  left: 0;
-  bottom: 0; }
+  left: 20px;
+  bottom: 20px;
+  right: 20px; }
+  .player-container iframe {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 5px; }
+  .player-container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.7); }
 
 .youtube-container {
-  padding: 5px;
-  background: #568ea3;
+  padding: 2px;
+  background: #E1B26B;
   margin-bottom: 30px;
   width: 300px;
   max-width: 300px;
@@ -76,7 +99,7 @@ body {
         transition: border-bottom-color 0.3s;
         border-bottom: 2px solid transparent; }
         .container .nav .nav-item .nav-link.active, .container .nav .nav-item .nav-link:hover {
-          border-bottom: 2px solid #568ea3; }
+          border-bottom: 2px solid #063D30; }
   .container section {
     margin-bottom: 50px; }
     .container section h2, .container section h3, .container section .section-title {
@@ -141,7 +164,7 @@ body {
         padding: 30px;
         background-color: rgba(0, 0, 0, 0.4); }
     .container section.accent {
-      background-color: #568ea3;
+      background-color: #063D30;
       color: white; }
       .container section.accent.accent-2 {
         background-color: #65532f; }
@@ -170,7 +193,7 @@ p {
   display: none; }
 
 a {
-  color: #68c3d4;
+  color: #E1B26B;
   transition: color 0.4s;
   text-decoration: none; }
   a.icon {
@@ -186,7 +209,7 @@ a {
     margin-bottom: 30px;
     padding: 10px; }
   a:hover {
-    color: #568ea3; }
+    color: #eed3ab; }
 
 .expandable.expanded .expanded-hidden {
   display: none; }
@@ -214,12 +237,12 @@ a {
       flex-grow: 0;
       width: 140px;
       border-radius: 2px;
-      border: 1px solid #568ea3;
+      border: 1px solid #E1B26B;
       padding: 7px;
       margin-left: 20px;
       transition: background-color 0.3s; }
     .listen-buttons a.listen-button:hover .button {
-      background-color: #568ea3;
+      background-color: #E1B26B;
       color: white; }
 
 .bit-top-track-button,
@@ -242,6 +265,7 @@ a {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
   display: flex;
   align-content: center;
   align-items: center;
@@ -253,11 +277,17 @@ a {
   .image-container.medium {
     height: 150px; }
   .image-container img.logo {
-    width: 260px;
+    width: 400px;
     opacity: 0;
     animation: fade-in 5s;
     animation-fill-mode: both;
-    animation-delay: 0.3s; }
+    animation-delay: 0.3s;
+    position: relative;
+    z-index: 1; }
+  .image-container img.bird {
+    width: 120px;
+    position: absolute;
+    bottom: -10px; }
   .image-container h2 {
     font-weight: normal;
     margin-top: 40px;
@@ -283,10 +313,11 @@ a {
     text-align: center; }
 
 .separator {
-  height: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
-  background: #65532f; }
+  height: 40px;
+  background-image: url("/logo/separator.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .video-container {
   position: relative;
@@ -412,6 +443,14 @@ img.cover-art {
   .container-blind-promo a.icon {
     color: white; }
 
+table th, table td {
+  min-width: 200px;
+  text-align: left; }
+
+table th {
+  font-weight: bold;
+  text-decoration: underline; }
+
 .live [mb-1] {
   margin-bottom: 30px; }
 
@@ -499,7 +538,7 @@ button, a.button {
   display: inline-block;
   border: none;
   text-decoration: none !important;
-  background: #568ea3;
+  background: #E1B26B;
   color: white;
   padding: 15px;
   border-radius: 2px;
@@ -513,7 +552,7 @@ button, a.button {
   button.youtube, a.button.youtube {
     background: #E62117; }
   button:active, button:focus, button:hover, a.button:active, a.button:focus, a.button:hover {
-    background: #68c3d4; }
+    background: #eed3ab; }
 
 .form-row {
   margin-bottom: 10px; }
