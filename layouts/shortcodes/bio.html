@@ -1,0 +1,58 @@
+<div id="bio">
+  <div class="bio-english">
+
+    <p>
+      Jonathan Rhodes (NL) is a storyteller with little pretence. He takes the stage as the antihero of his own adventures. The not-so-bold idealist looking for nuance and affirmation, while lacking the courage to follow his secret desire of a simple life.
+    </p>
+
+    <p>
+      Rhodes writes excellent songs with lyrics that are worth reading the liner notes for. He doesn’t like the label of singer-songwriter but he can’t deny that is exactly what he is. His sound leans on American roots with a hint of gospel. Small and fragile songs meet up-tempo roots rock, getting listeners ever closer to the edge of their seats.
+    </p>
+
+    <p>
+      Rhodes started playing his own songs in 2010 and was awarded the Grote Prijs van Nederland public award in 2013. ​"His songwriting ability is excellent; a very well deserved finalist." After releasing his debut EP Towards the Sun in 2014 he went on to play support shows for Otis Gibbs, Tangarine and others. Starting in 2015 he took time to focus on his musical development instead of making new material (except for one baby girl released in 2019, reportedly his finest work yet). After a season of writing, Rhodes resurfaced in 2020 with new songs, a new sound and a brand new band, resulting in him winning the Groningen Talent Award.      
+    </p>
+
+  </div>
+
+  <div class="bio-dutch">
+    <p>
+      Jonathan Rhodes vertelt verhalen zonder pretenties. Hij betreedt het toneel als de antiheld in zijn eigen avonturen. De niet-zo-dappere idealist die op zoek is naar nuance en bevestiging, terwijl het hem de moed ontbreekt om zijn geheime verlangen naar een eenvoudiger leven te volgen.
+    </p>
+
+    <p>
+      Rhodes schrijft uitstekende liedjes met lyrics die het de moeite waard maken om in de liner notes te kijken. Hij houdt niet van het label singer-songwriter maar kan ook niet ontkennen dat dat precies is wat hij is. Zijn geluid leunt op Amerikaanse roots met een mespuntje gospel. Kleine fragiele liedjes worden afgewisseld door up-tempo roots rock, waardoor je als luisteraar steeds dichter naar het puntje van je stoel schuift.
+    </p>
+
+    <p>
+      Rhodes begon zijn eigen materiaal te spelen in 2010 en won in 2013 de Grote Prijs van Nederland publieksprijs. ​"His songwriting ability is excellent; a very well deserved finalist." Na het uitbrengen van zijn debuut-EP Towards the Sun in 2014 speelde hij voorprogramma’s voor onder anderen Otis Gibbs en Tangarine. Vanaf 2015 nam hij de tijd zich te focussen op zijn muzikale ontwikkeling en maakte hij minder nieuws (behalve één klein mensje dat hij uitbracht in 2019 - zijn beste werk tot nog toe). Na een seizoen van schrijven, kwam Rhodes in 2020 weer boven water met nieuwe liedjes, een nieuwe sound en een nieuwe band waarmee hij meteen de POPgroningen Talent Award in de wacht sleepte.
+    </p>
+
+  </div>
+  <a href="#" class="toggle-english" onclick="toggleBioEnglish(event)">
+    &raquo; English
+  </a>
+  <a href="#" class="toggle-dutch" onclick="toggleBioDutch(event)">
+    &raquo; Dutch
+  </a>
+</div>
+
+<script type="text/JavaScript">
+  function toggleBioEnglish($e){
+    $e.preventDefault();
+    toggleBio(false)
+  }
+  function toggleBioDutch($e){
+    $e.preventDefault();
+    toggleBio(true)
+  }
+  function toggleBio(toDutch){
+    var elm = document.getElementById('bio');
+
+    if(toDutch){
+      elm.className = "show-dutch"
+    } else {
+      elm.className = ""
+    }
+  }
+</script>

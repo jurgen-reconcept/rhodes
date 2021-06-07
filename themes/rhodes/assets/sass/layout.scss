@@ -22,8 +22,8 @@ body {
   //   }
   // }
   a.listen-button {
-    border-color: $col-blue-2;
-    color: $col-blue-2;
+    border-color: $col-link;
+    color: $col-link-hover;
   }
 
   img.cover-art.light-shadow {
@@ -33,18 +33,51 @@ body {
   }
 }
 
+body.print {
+  background: white;
+  color: black;
+  section .section-title, section h2, section h3 {
+    color: black;
+  }
+}
+
+@media print {
+  .image-container {
+    display: none !important;
+  }
+}
+
 .player-container {
   position: fixed;
   z-index: 100;
-  width: 100%;
+  // width: 100%;
   height: 80px;
-  left: 0;
-  bottom: 0;
+  $m: 20px;
+  left: $m;
+  bottom: $m;
+  right: $m;
+
+  iframe {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -$m;
+    right: -$m;
+    bottom: -$m;
+    height: $m;
+    background: rgba(black, .7);
+  }
 }
 
 .youtube-container {
-  padding: 5px;
-  background: $col-blue;
+  padding: 2px;
+  background: $col-accent-2;
   margin-bottom: 30px;
 
   $w: 300px;
@@ -214,7 +247,7 @@ body {
     }
 
     &.accent {
-      background-color: $col-blue;
+      background-color: $col-accent;
       &.accent-2 {
         background-color: $col-drab;
       }
@@ -312,7 +345,7 @@ a {
       flex-grow: 0;
       width: 140px;
       border-radius: 2px;
-      border: 1px solid $col-blue;
+      border: 1px solid $col-link;
       padding: 7px;
       margin-left: 20px;
       transition: background-color 0.3s;
@@ -320,7 +353,7 @@ a {
 
     &:hover {
       .button {
-        background-color: $col-blue;
+        background-color: $col-link;
         color: white;
       }
     }
@@ -357,6 +390,7 @@ a {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 
   &.big {
     height: 450px;
@@ -374,11 +408,19 @@ a {
   color: white;
 
   img.logo {
-    width: 260px;
+    width: 400px;
     opacity: 0;
     animation: fade-in 5s;
     animation-fill-mode: both;
     animation-delay: 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+
+  img.bird {
+    width: 120px;
+    position: absolute;
+    bottom: -10px;
   }
 
   h2 {
@@ -413,11 +455,16 @@ a {
 }
 
 .separator {
-  height: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
+  height: 40px;
+  // margin-left: -30px;
+  // margin-right: -30px;
 
-  background: $col-accent;
+  // background: $col-accent;
+
+  background-image: url("/logo/separator.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .video-container {
@@ -577,5 +624,16 @@ $col-blind: #881e0a;
   }
   a.icon {
     color: white;
+  }
+}
+
+table {
+  th, td {
+    min-width: 200px;
+    text-align: left;
+  }
+  th {
+    font-weight: bold;
+    text-decoration: underline;
   }
 }

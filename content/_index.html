@@ -5,9 +5,9 @@ description: "Jonathan Rhodes writes and performs songs with little pretence"
 ---
 
 <div class="image-container image-container-promo photo2 big">
-  <img class="logo" src="/logo-white.svg" />
+  <img class="logo" src="/logo/logo-white.svg" />
 
-  <div class="follow-container">
+  <!-- <div class="follow-container">
     <iframe
       src="https://open.spotify.com/follow/1/?uri=spotify:artist:7iKI0f5q3WmoeNUY5xOnU8?si=YObf4l7gTLGjnmJD_kLCdQ&size=basic&theme=dark"
       width="140"
@@ -17,7 +17,8 @@ description: "Jonathan Rhodes writes and performs songs with little pretence"
       style="border: none; overflow: hidden"
       allowtransparency="true"
     ></iframe>
-  </div>
+  </div> -->
+  <img class="bird" src="/logo/bird-black.svg" />
 </div>
 
 <div class="player-container">
@@ -195,96 +196,7 @@ description: "Jonathan Rhodes writes and performs songs with little pretence"
     <div class="clearfix">
       <img class="photo-bio" src="/fotos/solo6.jpg" />
 
-      <div id="bio">
-        <div class="bio-english">
-          <p>
-            Jonathan Rhodes (NL) makes Americana with little pretence.
-            Drawing inspiration from the rich American music tradition,
-            he takes his audience over dusty roads straight into the depths of his heart.
-            Up-tempo roots rock meets unexpected acoustic ballads that keep listeners on the edge of their seats for the whole trip.
-          </p>
-
-          <p>
-            Rhodes is a storyteller who likes to explore the dissonance between momentary fads and lasting value. 
-            More often than not revealing his secret desires of a simpler life.
-            This results in songs with rough edges that are honest and deeply personal.
-          </p>
-
-          <p>Think Jason Isbell, Justin Townes Earle and Paul Simon.</p>
-
-          <p>
-            Rhodes started in 2013 as a singer-songwriter and shortly after was awarded the Grote Prijs van Nederland public award. ​
-            <i
-              >&quot;His songwriting ability is excellent; a very well deserved
-              finalist.&quot;</i
-            >
-            He played support shows for Otis Gibbs and Tangarine.
-          </p>
-
-          <p>
-            After a season of writing, Rhodes resurfaced in 2020 with a new sound and new songs,
-            resulting in winning the POPgroningen Talent Award that same year.
-          </p>
-        </div>
-
-        <div class="bio-dutch">
-          <p>
-            Jonathan Rhodes maakt ongerepte Americana uit Hollandse klei.
-            Met een sound die leunt op roots en blues neemt Rhodes zijn publiek mee 
-            over stoffige landweggetjes naar het diepst van zijn hart.            
-            Up-tempo rootsrock komt samen met onverwachte akoestische ballads waardoor je de hele reis op het puntje van je stoel blijft zitten.
-          </p>
-
-          <p>
-            Rhodes is een verhalenverteller die graag speelt met de spanning tussen
-            tijdelijke rages en eeuwige waarde.
-            Daarbij verraadt hij meer dan eens zijn geheime verlangen naar een eenvoudiger leven.
-            Het resultaat zijn liedjes met ruwe randen die vooral eerlijk zijn.
-          </p>
-
-          <p>Denk aan Jason Isbell, Justin Townes Earle en Paul Simon.</p>
-
-          <p>
-            Rhodes maakte in 2013 zijn debuut als singer-songwriter en won kort daarna de publieksprijs van de Grote Prijs van Nederland.
-            <i
-              >&quot;His songwriting ability is excellent - a very well deserved
-              finalist.&quot;</i
-            >
-            Hij speelde support shows voor onder anderen Otis Gibbs en Tangarine.
-          </p>
-
-          <p>
-            Na een seizoen van denken en schrijven kwam Jonathan Rhodes in 2020 boven water met een vernieuwde sound en met nieuw materiaal. 
-            Dat jaar won hij de POPgroningen Talent Award.
-          </p>
-        </div>
-        <a href="#" class="toggle-english" onclick="toggleBioEnglish(event)">
-          &raquo; English
-        </a>
-        <a href="#" class="toggle-dutch" onclick="toggleBioDutch(event)">
-          &raquo; Dutch
-        </a>
-      </div>
-
-      <script type="text/JavaScript">
-        function toggleBioEnglish($e){
-          $e.preventDefault();
-          toggleBio(false)
-        }
-        function toggleBioDutch($e){
-          $e.preventDefault();
-          toggleBio(true)
-        }
-        function toggleBio(toDutch){
-          var elm = document.getElementById('bio');
-
-          if(toDutch){
-            elm.className = "show-dutch"
-          } else {
-            elm.className = ""
-          }
-        }
-      </script>
+      {{< bio >}}
     </div>
   </section>
 

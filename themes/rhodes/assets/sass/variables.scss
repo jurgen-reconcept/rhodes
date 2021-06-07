@@ -5,18 +5,21 @@ $col-drab: #65532f;
 $col-pine: #262a10;
 $col-white: #f7f7f2;
 
+$col-green: #063D30;
+$col-yellow: #E1B26B;
+
 // green
-$c-green-dark: #007c58;
+// $c-green-dark: #007c58;
 $c-green: #00a676;
 $c-green-lightest: #d4f5eb;
 
-// yellow
-$c-yellow-dark: #a07500;
-$c-yellow: #fcba04;
-$c-yellow-lightest: #fff3d3;
+// // yellow
+// $c-yellow-dark: #a07500;
+// $c-yellow: #fcba04;
+// $c-yellow-lightest: #fff3d3;
 
-// red
-$c-red-dark: #ad3b1f;
+// // red
+// $c-red-dark: #ad3b1f;
 $c-red: #f06543;
 $c-red-lightest: #fce3dd;
 
@@ -26,10 +29,11 @@ $col-youtube: #E62117;
 $col-bg: black;
 $col-text: white;
 
-$col-accent: $col-drab;
-$col-brand: $col-blue;
-$col-link: $col-blue-2;
-$col-link-hover: $col-blue;
+$col-accent: $col-green;
+$col-accent-2: $col-yellow;
+$col-brand: $col-green;
+$col-link: $col-yellow;
+$col-link-hover: lighten($col-yellow, 15);
 $col-dark: $col-pine;
 
 $col-negative: $c-red; 
