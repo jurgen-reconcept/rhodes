@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   box-sizing: border-box;
   line-height: 1.7em; }
@@ -160,6 +160,8 @@ body.print {
       display: flex;
       align-items: center;
       justify-content: center; }
+      .container section.section-photo-live.photo2 {
+        background-image: url(/fotos/bfg_closeup.jpg); }
       .container section.section-photo-live .text-container {
         padding: 30px;
         background-color: rgba(0, 0, 0, 0.4); }
@@ -303,7 +305,7 @@ a {
   position: relative; }
   .image-container-promo.photo2 {
     background-image: url("/fotos/bfg_closeup.jpg");
-    background-position: center;
+    background-position: center -550px;
     background-attachment: fixed; }
   .image-container-promo .follow-container {
     position: absolute;
