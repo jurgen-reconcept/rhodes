@@ -232,6 +232,10 @@ body.print {
 
     &.section-photo-live {
       background: url(/fotos/bfg_frontaal.jpg);
+
+      &.photo2 {
+        background-image: url(/fotos/bfg_closeup.jpg);
+      }
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -441,7 +445,7 @@ a {
 
   &.photo2 {
     background-image: url("/fotos/bfg_closeup.jpg");
-    background-position: center;
+    background-position: center -550px;
     background-attachment: fixed;
   }
 
