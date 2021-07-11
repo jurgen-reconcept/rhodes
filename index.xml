@@ -270,7 +270,7 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jonathanrhodes.nl/backstage/</guid>
-      <description> window.location.href = `https://discord.com/invite/hqJVAzac5J` </description>
+      <description> // window.location.href = `https://discord.com/invite/hqJVAzac5J` window.location.href = `https://www.patreon.com/jonathanrhodesmusic` </description>
     </item>
     
     <item>
@@ -334,6 +334,15 @@ Your subscription could not be saved. Please try again.  Good for you, you insid
       
       <guid>https://jonathanrhodes.nl/live/</guid>
       <description>--  Bij het nummer Time &amp; Money hoort een live videoclip op je telefoon.   1. Wij spelen       2. Jij drukt op deze knop: Start!       Draai je scherm een kwartslag. Dat staat een stuk beter.      Vond je dit te gek? Volg ons om op de hoogte te blijven!  Follow   Subscribe   Follow   Like      checkOrientation() window.</description>
+    </item>
+    
+    <item>
+      <title>Jonathan Rhodes Live in EM2</title>
+      <link>https://jonathanrhodes.nl/em2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanrhodes.nl/em2/</guid>
+      <description> window.location.href = `https://www.eventbrite.nl/e/tickets-jonathan-rhodes-single-release-show-support-t-a-m-a-r-live-at-em2-158278371871` </description>
     </item>
     
   </channel>
